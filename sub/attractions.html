@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0, user-scalable=yes">
+    <title>주변 즐길거리 ｜ GRAND HYATT SEOUL</title>
+    <link href="/img/favicon.ico" rel="shortcut icon">
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/sub_style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- slick -->
+    <link href="/plugin/slick/slick-theme.css" rel="stylesheet">
+    <link href="/plugin/slick/slick.css" rel="stylesheet">
+    <script src="/plugin/slick/slick.min.js"></script>
+    <!-- flatpickr -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/ko.js"></script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/56dd584cb7.js" crossorigin="anonymous"></script>
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 헤더 -->
+    <header>
+        <div class="top">
+            <div class="container">
+                <div class="logo">
+                    <a href="/index.html">
+                        <img src="/img/logo_white.png" alt="로고" class="white">
+                        <img src="/img/logo.png" alt="로고" class="color">
+                    </a>
+                </div>
+                <ul class="_menu">
+                    <li class="login"><a href="#">로그인</a></li>
+                    <li class="rsv"><a href="#">예약확인/취소</a></li>
+                    <li class="lang">
+                        <span>KR</span>
+                        <ul>
+                            <li><a href="#">KR</a></li>
+                            <li><a href="#">EN</a></li>
+                            <li><a href="#">CN</a></li>
+                            <li><a href="#">JP</a></li>
+                            <li><a href="#">TW</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <button class="mo_btn">
+                    <span class="bar bar1"></span>
+                    <span class="bar bar2"></span>
+                    <span class="bar bar3"></span>
+                </button>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="container">
+                <nav class="gnb">
+                    <ul>
+                        <li>
+                            <a href="/sub/attractions.html">GRAND HYATT</a>
+                            <ul class="lnb">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">오시는 길</a></li>
+                                <li><a href="/sub/attractions.html">주변 즐길거리</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">WORLD OF HYATT</a>
+                            <ul class="lnb">
+                                <li><a href="#">하얏트 월드 홈</a></li>
+                                <li><a href="#">등급 및 혜택</a></li>
+                                <li><a href="#">하얏트 리워즈</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">HOTEL</a>
+                            <ul class="lnb">
+                                <li><a href="#">객실</a></li>
+                                <li><a href="#">다이닝 & 바</a></li>
+                                <li><a href="#">부대시설</a></li>
+                                <li><a href="#">스페셜 오퍼</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/sub/wedding.html">WEDDING & MEETING</a>
+                            <ul class="lnb">
+                                <li><a href="/sub/wedding.html">웨딩</a></li>
+                                <li><a href="#">미팅</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/sub/inquiries.html">SERVICE</a>
+                            <ul class="lnb">
+                                <li><a href="/sub/inquiries.html">이용문의</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu_bg"></div>
+        </div>
+    </header>
+    <!-- 모바일 메뉴 -->
+    <div class="mobile-only">
+        <div class="black"></div>
+        <div class="side">
+            <div class="top">
+                <div class="logo">
+                    <a href="#">
+                        <img src="/img/logo.png" alt="로고">
+                    </a>
+                </div>
+                <ul class="_menu float">
+                    <li>
+                        <a href="#" class="float">
+                            <span class="txt login">로그인</span>
+                            <i class="fa-solid fa-caret-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="float">
+                            <span class="txt rsv">예약확인/취소</span>
+                            <i class="fa-solid fa-caret-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <nav class="gnb">
+                <ul>
+                    <li class="on">
+                        <span>GRAND HYATT</span>
+                        <ul class="lnb">
+                            <li>
+                                <a href="#">공지사항</a>
+                            </li>
+                            <li>
+                                <a href="#">오시는 길</a>
+                            </li>
+                            <li>
+                                <a href="/sub/attractions.html">주변 즐길거리</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>WORLD OF HYATT</span>
+                        <ul class="lnb">
+                            <li>
+                                <a href="#">하얏트 월드 홈</a>
+                            </li>
+                            <li>
+                                <a href="#">등급 및 혜택</a>
+                            </li>
+                            <li>
+                                <a href="#">하얏트 리워즈</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>HOTEL</span>
+                        <ul class="lnb">
+                            <li>
+                                <a href="#">객실</a>
+                            </li>
+                            <li>
+                                <a href="#">다이닝 & 바</a>
+                            </li>
+                            <li>
+                                <a href="#">부대시설</a>
+                            </li>
+                            <li>
+                                <a href="#">스페셜 오퍼</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>WEDDING & MEETING</span>
+                        <ul class="lnb">
+                            <li>
+                                <a href="/sub/wedding.html">웨딩</a>
+                            </li>
+                            <li>
+                                <a href="#">미팅</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>SERVICE</span>
+                        <ul class="lnb">
+                            <li>
+                                <a href="/sub/inquiries.html">이용문의</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQ</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="lang">
+                <select onchange="if(this.value) location.href=(this.value);">
+                    <option>Language</option>
+                    <option value="#">KR</option>
+                    <option value="#">EN</option>
+                    <option value="#">CN</option>
+                    <option value="#">JP</option>
+                    <option value="#">TW</option>
+                </select>
+            </div>
+            <button type="button" class="mo_btn">
+                <span class="bar bar1"></span>
+                <span class="bar bar2"></span>
+            </button>
+        </div>
+    </div>
+    <main id="contents">
+        <!-- 서브탑 -->
+        <div class="sub_top">
+            <div class="image" style="background-image:url('/img/atr_bg.jpg');">
+                <h1>ATTRACTIONS</h1>
+            </div>
+            <div class="_sub">
+                <div class="container">
+                    <span><b>GRAND HYATT</b>   ｜   주변 즐길거리</span>
+                </div>
+            </div>
+        </div>
+        <!-- 서브섹션 -->
+        <section class="sub_section atr_section">
+            <div class="container">
+                <div class="sec_title">
+                    <h2>주변 즐길거리</h2>
+                    <p>놀거리 가득한 그랜드 하얏트 서울의 주변 명소를 즐겨보세요.</p>
+                </div>
+                <ul class="filter">
+                    <li data-name="cont" class="on">ALL<span></span></li>
+                    <li data-name="shopping">쇼핑<span></span></li>
+                    <li data-name="culture">예술 & 문화<span></span></li>
+                    <li data-name="photo">포토<span></span></li>
+                </ul>
+                <ul class="content">
+                    <li class="cont cont1 shopping">
+                        <div class="wrap">
+                            <span class="s-text">SHOPPING</span>
+                            <div class="atr_image">
+                                <img src="/img/attractions1.jpg" alt="이태원">
+                            </div>
+                        </div>
+                        <div class="atr_txt">
+                            <p>이태원</p>
+                        </div>
+                    </li>
+                    <li class="cont cont2 shopping">
+                        <div class="wrap">
+                            <span class="s-text">SHOPPING</span>
+                            <div class="atr_image">
+                                <img src="/img/attractions2.jpg" alt="명동">
+                            </div>
+                        </div>
+                        <div class="atr_txt">
+                            <p>명동</p>
+                        </div>
+                    </li>
+                    <li class="cont cont3 shopping">
+                        <div class="wrap">
+                            <span class="s-text">SHOPPING</span>
+                            <div class="atr_image">
+                                <img src="/img/attractions3.jpg" alt="동대문 디자인 플라자">
+                            </div>
+                        </div>
+                        <div class="atr_txt">
+                            <p>동대문 디자인 플라자</p>
+                        </div>
+                    </li>
+                    <li class="cont cont4 shopping">
+                        <div class="wrap">
+                            <span class="s-text">SHOPPING</span>
+                            <div class="atr_image">
+                                <img src="/img/attractions4.jpg" alt="더현대서울">
+                            </div>
+                        </div>
+                        <div class="atr_txt">
+                            <p>더 현대 서울</p>
+                        </div>
+                    </li>
+                    <li class="cont cont5 shopping">
+                        <div class="wrap">
+                            <span class="s-text">SHOPPING</span>
+                            <div class="atr_image">
+                                <img src="/img/attractions5.jpg" alt="스타필드코엑스몰">
+                            </div>
+                        </div>
+                        <div class="atr_txt">
+                            <p>스타필드 코엑스몰</p>
+                        </div>
+                    </li>
+                    <li class="cont cont6 shopping">
+                        <div class="wrap">
+                            <span class="s-text">SHOPPING</span>
+                            <div class="atr_image">
+                                <img src="/img/attractions6.jpg" alt="롯데월드몰">
+                            </div>
+                        </div>
+                        <div class="atr_txt">
+                            <p>롯데월드몰</p>
+                        </div>
+                    </li>
+                    <li class="cont cont7 culture">
+                        <div class="wrap">
+                            <span class="s-text">ART & CULTURE</span>
+                            <div class="atr_image">
+                                <img src="/img/attractions7.jpg" alt="광화문광장">
+                            </div>
+                        </div>
+                        <div class="atr_txt">
+                            <p>광화문광장</p>
+                        </div>
+                    </li>
+                    <li class="cont cont8 culture">
+                        <div class="wrap">
+                            <span class="s-text">ART & CULTURE</span>
+                            <div class="atr_image">
+                                <img src="/img/attractions8.jpg" alt="서울시립미술관">
+                            </div>
+                        </div>
+                        <div class="atr_txt">
+                            <p>서울시립미술관</p>
+                        </div>
+                    </li>
+                    <li class="cont cont9 culture">
+                        <div class="wrap">
+                            <span class="s-text">ART & CULTURE</span>
+                            <div class="atr_image">
+                                <img src="/img/attractions9.jpg" alt="북촌한옥마을">
+                            </div>
+                        </div>
+                        <div class="atr_txt">
+                            <p>북촌 한옥마을</p>
+                        </div>
+                    </li>
+                    <li class="cont cont10 culture">
+                        <div class="wrap">
+                            <span class="s-text">ART & CULTURE</span>
+                            <div class="atr_image">
+                                <img src="/img/attractions10.jpg" alt="경복궁">
+                            </div>
+                        </div>
+                        <div class="atr_txt">
+                            <p>경복궁</p>
+                        </div>
+                    </li>
+                    <li class="cont cont11 culture">
+                        <div class="wrap">
+                            <span class="s-text">ART & CULTURE</span>
+                            <div class="atr_image">
+                                <img src="/img/attractions11.jpg" alt="덕수궁">
+                            </div>
+                        </div>
+                        <div class="atr_txt">
+                            <p>덕수궁</p>
+                        </div>
+                    </li>
+                    <li class="cont cont12 culture">
+                        <div class="wrap">
+                            <span class="s-text">ART & CULTURE</span>
+                            <div class="atr_image">
+                                <img src="/img/attractions12.jpg" alt="트릭아이뮤지엄">
+                            </div>
+                        </div>
+                        <div class="atr_txt">
+                            <p>트릭아이뮤지엄</p>
+                        </div>
+                    </li>
+                    <li class="cont cont13 photo">
+                        <div class="wrap">
+                            <span class="s-text">PHOTO</span>
+                            <div class="atr_image">
+                                <img src="/img/attractions13.jpg" alt="한강">
+                            </div>
+                        </div>
+                        <div class="atr_txt">
+                            <p>한강</p>
+                        </div>
+                    </li>
+                    <li class="cont cont14 photo">
+                        <div class="wrap">
+                            <span class="s-text">PHOTO</span>
+                            <div class="atr_image">
+                                <img src="/img/attractions14.jpg" alt="N서울타워">
+                            </div>
+                        </div>
+                        <div class="atr_txt">
+                            <p>N서울타워</p>
+                        </div>
+                    </li>
+                    <li class="cont cont15 photo">
+                        <div class="wrap">
+                            <span class="s-text">PHOTO</span>
+                            <div class="atr_image">
+                                <img src="/img/attractions15.jpg" alt="한강세빛섬">
+                            </div>
+                        </div>
+                        <div class="atr_txt">
+                            <p>한강세빛섬</p>
+                        </div>
+                    </li>
+                    <li class="cont cont16 photo">
+                        <div class="wrap">
+                            <span class="s-text">PHOTO</span>
+                            <div class="atr_image">
+                                <img src="/img/attractions16.jpg" alt="서울숲">
+                            </div>
+                        </div>
+                        <div class="atr_txt">
+                            <p>서울숲</p>
+                        </div>
+                    </li>
+                    <li class="cont cont17 photo">
+                        <div class="wrap">
+                            <span class="s-text">PHOTO</span>
+                            <div class="atr_image">
+                                <img src="/img/attractions17.jpg" alt="인사동">
+                            </div>
+                        </div>
+                        <div class="atr_txt">
+                            <p>인사동</p>
+                        </div>
+                    </li>
+                    <li class="cont cont18 photo">
+                        <div class="wrap">
+                            <span class="s-text">PHOTO</span>
+                            <div class="atr_image">
+                                <img src="/img/attractions18.jpg" alt="남산">
+                            </div>
+                        </div>
+                        <div class="atr_txt">
+                            <p>남산</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <!-- 푸터 -->
+    <footer>
+        <div class="top">
+            <div class="container">
+                <div class="f_logo">
+                    <img src="/img/logo_white.png" alt="로고">
+                </div>
+                <ul class="f_menu f_menu1">
+                    <li><a href="#">호텔 개요</a></li>
+                    <li><a href="#">채용 정보</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                </ul>
+                <ul class="f_menu f_menu2">
+                    <li><a href="#">개인정보 보호정책</a></li>
+                    <li><a href="#">이용 약관</a></li>
+                    <li><a href="#">쿠키 센터</a></li>
+                    <li><a href="#">보안 및 안전</a></li>
+                    <li><a href="#">현대판 노예제 및 인신매매</a></li>
+                    <li><a href="#">개인정보 판매 거부</a></li>
+                </ul>
+                <div class="familySite">
+                    <select onchange="if(this.value) window.open=(this.value);">
+                        <option>FAMILY SITE</option>
+                        <option value="#">HYATT WORLD</option>
+                        <option value="#">GRAND HYATT INCHEON</option>
+                        <option value="#">GRAND HYATT JEJU</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="container">
+                <div class="f_info">
+                    <p>
+                        그랜드 하얏트 서울 : 서울시 용산구 소월로 322 ｜ 대표자 : 신현택<br>
+                        사업자등록번호 : 106-81-07732 ｜ 통신판매업신고 : 용산-0453호<br>
+                        전화 : +82)02-797-1234 ｜ 팩스 : +82)02-798-6953 ｜ 이메일 : seoul.grand@hyatt.com
+                    </p>
+                    <p class="copyright">© 2022 Hyatt Corporation</p>
+                </div>
+                <ul class="sns">
+                    <li onclick="location.href='#'">
+                        <i class="fab fa-facebook-f"></i>
+                    </li>
+                    <li onclick="location.href='#'">
+                        <i class="fab fa-instagram"></i>
+                    </li>
+                    <li onclick="location.href='#'">
+                        <i class="fab fa-twitter"></i>
+                    </li>
+                    <li onclick="location.href='#'">
+                        <i class="fab fa-linkedin-in"></i>
+                    </li>
+                    <li onclick="location.href='#'">
+                        <i class="fab fa-youtube"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- 스크립트 -->
+    <script src="/js/script.js"></script>
+</body>
+</html>

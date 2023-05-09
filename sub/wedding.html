@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0, user-scalable=yes">
+    <title>웨딩 ｜ GRAND HYATT SEOUL</title>
+    <link href="/img/favicon.ico" rel="shortcut icon">
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/sub_style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- slick -->
+    <link href="/plugin/slick/slick-theme.css" rel="stylesheet">
+    <link href="/plugin/slick/slick.css" rel="stylesheet">
+    <script src="/plugin/slick/slick.min.js"></script>
+    <!-- flatpickr -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/ko.js"></script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/56dd584cb7.js" crossorigin="anonymous"></script>
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 헤더 -->
+    <header>
+        <div class="top">
+            <div class="container">
+                <div class="logo">
+                    <a href="/index.html">
+                        <img src="/img/logo_white.png" alt="로고" class="white">
+                        <img src="/img/logo.png" alt="로고" class="color">
+                    </a>
+                </div>
+                <ul class="_menu">
+                    <li class="login"><a href="#">로그인</a></li>
+                    <li class="rsv"><a href="#">예약확인/취소</a></li>
+                    <li class="lang">
+                        <span>KR</span>
+                        <ul>
+                            <li><a href="#">KR</a></li>
+                            <li><a href="#">EN</a></li>
+                            <li><a href="#">CN</a></li>
+                            <li><a href="#">JP</a></li>
+                            <li><a href="#">TW</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <button class="mo_btn">
+                    <span class="bar bar1"></span>
+                    <span class="bar bar2"></span>
+                    <span class="bar bar3"></span>
+                </button>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="container">
+                <nav class="gnb">
+                    <ul>
+                        <li>
+                            <a href="/sub/attractions.html">GRAND HYATT</a>
+                            <ul class="lnb">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">오시는 길</a></li>
+                                <li><a href="/sub/attractions.html">주변 즐길거리</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">WORLD OF HYATT</a>
+                            <ul class="lnb">
+                                <li><a href="#">하얏트 월드 홈</a></li>
+                                <li><a href="#">등급 및 혜택</a></li>
+                                <li><a href="#">하얏트 리워즈</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">HOTEL</a>
+                            <ul class="lnb">
+                                <li><a href="#">객실</a></li>
+                                <li><a href="#">다이닝 & 바</a></li>
+                                <li><a href="#">부대시설</a></li>
+                                <li><a href="#">스페셜 오퍼</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/sub/wedding.html">WEDDING & MEETING</a>
+                            <ul class="lnb">
+                                <li><a href="/sub/wedding.html">웨딩</a></li>
+                                <li><a href="#">미팅</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/sub/inquiries.html">SERVICE</a>
+                            <ul class="lnb">
+                                <li><a href="/sub/inquiries.html">이용문의</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu_bg"></div>
+        </div>
+    </header>
+    <!-- 모바일 메뉴 -->
+    <div class="mobile-only">
+        <div class="black"></div>
+        <div class="side">
+            <div class="top">
+                <div class="logo">
+                    <a href="#">
+                        <img src="/img/logo.png" alt="로고">
+                    </a>
+                </div>
+                <ul class="_menu float">
+                    <li>
+                        <a href="#" class="float">
+                            <span class="txt login">로그인</span>
+                            <i class="fa-solid fa-caret-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="float">
+                            <span class="txt rsv">예약확인/취소</span>
+                            <i class="fa-solid fa-caret-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <nav class="gnb">
+                <ul>
+                    <li class="on">
+                        <span>GRAND HYATT</span>
+                        <ul class="lnb">
+                            <li>
+                                <a href="#">공지사항</a>
+                            </li>
+                            <li>
+                                <a href="#">오시는 길</a>
+                            </li>
+                            <li>
+                                <a href="/sub/attractions.html">주변 즐길거리</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>WORLD OF HYATT</span>
+                        <ul class="lnb">
+                            <li>
+                                <a href="#">하얏트 월드 홈</a>
+                            </li>
+                            <li>
+                                <a href="#">등급 및 혜택</a>
+                            </li>
+                            <li>
+                                <a href="#">하얏트 리워즈</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>HOTEL</span>
+                        <ul class="lnb">
+                            <li>
+                                <a href="#">객실</a>
+                            </li>
+                            <li>
+                                <a href="#">다이닝 & 바</a>
+                            </li>
+                            <li>
+                                <a href="#">부대시설</a>
+                            </li>
+                            <li>
+                                <a href="#">스페셜 오퍼</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>WEDDING & MEETING</span>
+                        <ul class="lnb">
+                            <li>
+                                <a href="/sub/wedding.html">웨딩</a>
+                            </li>
+                            <li>
+                                <a href="#">미팅</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>SERVICE</span>
+                        <ul class="lnb">
+                            <li>
+                                <a href="/sub/inquiries.html">이용문의</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQ</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="lang">
+                <select onchange="if(this.value) location.href=(this.value);">
+                    <option>Language</option>
+                    <option value="#">KR</option>
+                    <option value="#">EN</option>
+                    <option value="#">CN</option>
+                    <option value="#">JP</option>
+                    <option value="#">TW</option>
+                </select>
+            </div>
+            <button type="button" class="mo_btn">
+                <span class="bar bar1"></span>
+                <span class="bar bar2"></span>
+            </button>
+        </div>
+    </div>
+    <main id="contents">
+        <!-- 서브탑 -->
+        <div class="sub_top">
+            <div class="image" style="background-image:url('/img/wedding_bg.jpg');">
+                <h1>WEDDING</h1>
+            </div>
+            <div class="_sub">
+                <div class="container">
+                    <span><b>WEDDING & MEETING</b>   ｜   웨딩</span>
+                </div>
+            </div>
+        </div>
+        <!-- 서브섹션 -->
+        <section class="sub_section wd_section">
+            <div class="container">
+                <div class="sec_title">
+                    <h2>웨딩</h2>
+                    <p>그랜드 하얏트 서울만의 로맨스 웨딩으로 평생의 기억이 될 아름다운 순간을 만들어드립니다.</p>
+                </div>
+                <div class="content">
+                    <div class="wd_image">
+                        <img src="/img/wedding1.jpg" alt="웨딩이미지1">
+                        <img src="/img/wedding2.jpg" alt="웨딩이미지2">
+                        <img src="/img/wedding3.jpg" alt="웨딩이미지3">
+                        <img src="/img/wedding4.jpg" alt="웨딩이미지4">
+                    </div>
+                    <div class="wd_txt">
+                        <b>꿈꿔오던 그 순간을 더 아름답게, <br class="mo">"로맨스 웨딩"</b>
+                        <p>
+                            그랜드 하얏트 서울의 웨딩 컨설턴트가 고객의 취향을 고려한 세심한 웨딩 디자인을 통해 소중한 순간을 축복과 마법같은 행복으로 빛나게 해드립니다.
+                            야외에서만 느낄 수 있었던 가든 웨딩의 매력을 오감을 이용한 고급스러운 감각으로 재해석한 4가지의 <br class="mo"><strong>"로맨스 웨딩"</strong>으로 만나보세요.
+                        </p>
+                        <div class="btnWrap float">
+                            <div class="btn">
+                                <a href="#">주차 안내</a>
+                            </div>
+                            <div class="btn">
+                                <a href="#">견적 문의</a>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="desc">
+                        <li>
+                            <span>01</span>
+                            <h3>로맨스 웨딩</h3>
+                            <p>4종의 가든 테마 웨딩 - 로얄, 블러섬, 인챈티드 그리고 라벤더- 4가지의 가든 테마 웨딩 콘셉트는 개인의 취향에 맞춰 세심하게 준비됩니다.</p>
+                        </li>
+                        <li>
+                            <span>02</span>
+                            <h3>웨딩 데커레이션</h3>
+                            <p>황홀한 이미지를 배경으로 펼쳐지는 선율과 공간을 채우는 우아한 향 그리고 고객님만을 위한 스테이셔너리와 눈부신 테이블 셋팅은 완벽한 웨딩의 기준이 됩니다.</p>
+                        </li>
+                        <li>
+                            <span>03</span>
+                            <h3>예술을 담은 요리</h3>
+                            <p>커스텀 디자인한 칵테일과 카나페 예술적인 스타일의 코스 메뉴까지 고객님의 가든 테마에 어울리는 최상의 요리를 만끽하세요.</p>
+                        </li>
+                        <li>
+                            <span>04</span>
+                            <h3>웨딩 컨설턴트</h3>
+                            <p>야외 웨딩을 연상시키는풍성한 플라워와 싱그러운 나뭇잎이 이루는 환상적인 연출로 큰 감동을 선사해 드립니다.</p>
+                        </li>
+                        <li>
+                            <span>05</span>
+                            <h3>플라워 디자인</h3>
+                            <p>황홀한 이미지를 배경으로 펼쳐지는 선율과 공간을 채우는 우아한 향 그리고 고객님만을 위한 스테이셔너리와 눈부신 테이블 셋팅은 완벽한 웨딩의 기준이 됩니다.</p>
+                        </li>
+                        <li>
+                            <span>06</span>
+                            <h3>웨딩 케이크</h3>
+                            <p>각 층마다 화려한 장식과 퐁당 플라워로 데코레이트한 완벽한 웨딩 케이크는 고객님의 웨딩을 더욱 돋보이게 합니다.</p>
+                        </li>
+                        <li>
+                            <span>07</span>
+                            <h3>뮤직 스타일링</h3>
+                            <p>웨딩 콘셉트에 맞춰 특별히 디자인된 4가지의 웨딩 음악은 웨딩의 순간을 더 큰 감동으로 연출해드립니다.</p>
+                        </li>
+                        <li>
+                            <span>08</span>
+                            <h3>프리 & 포스트 셀러브레이션</h3>
+                            <p>축복가득한 행복한 순간의 여운을 더욱 길게 가져가십시오. 신부를 위한 스파 트리트먼트부터 리허설 디너, 애프터 웨딩 파티, 허니문 브런치 등 다양한 공간에서 당신의 특별한 순간을 기념하실 수 있습니다.</p>
+                        </li>
+                        <li>
+                            <span>09</span>
+                            <h3>하얏트 월드 허니문 프로모션</h3>
+                            <p>당신의 허니문에도 하얏트가 함께합니다. 하얏트 월드 회원이라면 웨딩을 통해 적립한 포인트로 전세계 하얏트 호텔 & 리조트에서 기억에 남을 허니문을 계획하실 수 있습니다.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- 푸터 -->
+    <footer>
+        <div class="top">
+            <div class="container">
+                <div class="f_logo">
+                    <img src="/img/logo_white.png" alt="로고">
+                </div>
+                <ul class="f_menu f_menu1">
+                    <li><a href="#">호텔 개요</a></li>
+                    <li><a href="#">채용 정보</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                </ul>
+                <ul class="f_menu f_menu2">
+                    <li><a href="#">개인정보 보호정책</a></li>
+                    <li><a href="#">이용 약관</a></li>
+                    <li><a href="#">쿠키 센터</a></li>
+                    <li><a href="#">보안 및 안전</a></li>
+                    <li><a href="#">현대판 노예제 및 인신매매</a></li>
+                    <li><a href="#">개인정보 판매 거부</a></li>
+                </ul>
+                <div class="familySite">
+                    <select onchange="if(this.value) window.open=(this.value);">
+                        <option>FAMILY SITE</option>
+                        <option value="#">HYATT WORLD</option>
+                        <option value="#">GRAND HYATT INCHEON</option>
+                        <option value="#">GRAND HYATT JEJU</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="container">
+                <div class="f_info">
+                    <p>
+                        그랜드 하얏트 서울 : 서울시 용산구 소월로 322 ｜ 대표자 : 신현택<br>
+                        사업자등록번호 : 106-81-07732 ｜ 통신판매업신고 : 용산-0453호<br>
+                        전화 : +82)02-797-1234 ｜ 팩스 : +82)02-798-6953 ｜ 이메일 : seoul.grand@hyatt.com
+                    </p>
+                    <p class="copyright">© 2022 Hyatt Corporation</p>
+                </div>
+                <ul class="sns">
+                    <li onclick="location.href='#'">
+                        <i class="fab fa-facebook-f"></i>
+                    </li>
+                    <li onclick="location.href='#'">
+                        <i class="fab fa-instagram"></i>
+                    </li>
+                    <li onclick="location.href='#'">
+                        <i class="fab fa-twitter"></i>
+                    </li>
+                    <li onclick="location.href='#'">
+                        <i class="fab fa-linkedin-in"></i>
+                    </li>
+                    <li onclick="location.href='#'">
+                        <i class="fab fa-youtube"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- 스크립트 -->
+    <script src="/js/script.js"></script>
+</body>
+</html>
