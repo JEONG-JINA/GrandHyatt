@@ -4,7 +4,7 @@
 * {padding: 0; margin: 0; position: relative; list-style: none; word-break: keep-all; font-family: 'Bitter', 'Noto Sans KR', serif, sans-serif;}
 a {text-decoration: none;}
 span, img {display: block;}
-button, select {background-color:transparent; outline: none; border: none; cursor: pointer;}
+button, select {background-color:transparent; border: none; cursor: pointer;}
 .float::after {content: ""; display: block; clear: both;}
 
 body {background-color: #fbfbfb; /*touch-action: pan-y;*/}
