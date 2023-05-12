@@ -1,65 +1,5 @@
 @charset "utf-8";
 
-/******************************** settings start **************************************/
-* {padding: 0; margin: 0; position: relative; list-style: none; word-break: keep-all; font-family: 'Bitter', 'Noto Sans KR', serif, sans-serif;}
-a {text-decoration: none;}
-span, img {display: block;}
-button, select {background-color:transparent; border: none; cursor: pointer;}
-.float::after {content: ""; display: block; clear: both;}
-
-body {background-color: #fbfbfb; /*touch-action: pan-y;*/}
-
-.container {width: 85%; max-width: 1280px; height: 100%; margin: 0 auto;}
-
-.section {padding: 90px 0;}
-section h2 {font-size: 47px; font-weight: 400;}
-section h3 {font-size: 20px; font-weight: 700; letter-spacing: -0.5px;}
-section p {line-height: 1.6; color: #727272; letter-spacing: -0.6px;}
-
-.sec_title {text-align: center;}
-.sec_title::after {content: ""; display: block; width: 40px; height: 1px; background-color: #902e2e; margin: 30px auto 0;}
-.sec_title h2 {color: #192E40;}
-.sec_title p {font-size: 17px; margin-top: 25px; color: #444;}
-
-.btn {width: 150px; height: 46px; border: 1px solid #192E40; margin-top: 35px;}
-.btn::before {content: ""; display: block; width: 0; height: 100%; background-color: #192E40; position: absolute; top: 0; left: 0; transition: 0.4s;}
-.btn > a {display: block; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; color: #192E40; font-size: 15px; font-weight: 600; transition: 0.4s;}
-.btn:hover::before {width: 100%;}
-.btn:hover a {color: #fff;}
-
-.section-offers .content .cont .offers_txt .date,
-.section-dining .tab-content .dining_txt .more,
-.btn > a {font-family: 'Montserrat', 'Noto Sans KR', sans-serif;}
-
-.s-pc, .mo {display: none;}
-
-.slick-dotted.slick-slider {margin-bottom: 0 !important;}
-
-.slick-custom-dots {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 45px;
-}
-
-.slick-custom-dots li {
-    margin: 0 6px;
-}
-
-.slick-custom-dots button {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    text-indent: -9999px;
-    background-color: #d5d5d5;
-}
-
-.slick-custom-dots li.slick-active button {
-    background-color: #192E40;
-}
-/******************************** //settings end **************************************/
-
-
 
 /** 헤더 **/
 header {
@@ -357,7 +297,7 @@ header .bottom .gnb > ul > li > a {
     width: 80%;
     max-width: 700px;
     height: 100%;
-    background-color: #fff;
+    background-color: #192E40;
     position: absolute;
     top: 0;
     right: -100%;
@@ -375,14 +315,15 @@ header .bottom .gnb > ul > li > a {
     padding: 3% 5% 2%;
     box-sizing: border-box;
     border-bottom: 5px solid #192E40;
+    background-color: #fff;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
 }
 
 .side .top .logo {
-    width: 60%;
-    max-width: 240px;
+    width: 50%;
+    max-width: 220px;
 }
 
 .side .top .logo img {
@@ -485,8 +426,6 @@ header .bottom .gnb > ul > li > a {
 }
 
 .side .lang {
-    height: calc(100% - 304px - 25%);
-    background-color: #192E40;
     box-sizing: border-box;
     padding: 4% 5%;
 }
@@ -497,10 +436,6 @@ header .bottom .gnb > ul > li > a {
     font-size: 14px;
     letter-spacing: 0.5px;
     padding-bottom: 5px;
-}
-
-.side .lang select option {
-    color: #000;
 }
 
 .side .mo_btn {
@@ -537,7 +472,7 @@ header .bottom .gnb > ul > li > a {
 }
 
 .main-visual::after {
-    content: "";
+    content: '';
     display: block;
     width: 100%;
     height: 100%;
@@ -739,17 +674,12 @@ header .bottom .gnb > ul > li > a {
 /** 스페셜오퍼 **/
 .section-offers .content {
     width: 100%;
-    margin-top: 50px;
 }
 
 .section-offers .content .sliderCont {
     width: 320px;
     margin-right: 25px;
     transition: 0.5s;
-}
-
-.section-offers .content .sliderCont:hover {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .section-offers .content .sliderCont .offers_image {
@@ -762,10 +692,6 @@ header .bottom .gnb > ul > li > a {
     height: 100%;
     object-fit: cover;
     transition: 0.5s;
-}
-
-.section-offers .content .sliderCont:hover .offers_image img {
-    transform: scale(1.1);
 }
 
 .section-offers .content .sliderCont .offers_txt {
@@ -837,13 +763,13 @@ header .bottom .gnb > ul > li > a {
 
 /** 객실 **/
 .section-room {
-    background-image: url("img/sec3_bg.jpg");
+    background-image: url('img/sec3_bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-.section-room .container {
+.section-room .inner {
     width: calc(((100% - 85%) / 2) + 85%);
     max-width: calc(((100% - 1280px) / 2) + 1280px);
     margin: 0 0 0 auto;
@@ -870,7 +796,6 @@ header .bottom .gnb > ul > li > a {
 
 .section-room .room_desc p {
     font-size: 17px;
-    padding-top: 30px;
     line-height: 1.8;
     color: #142634;
 }
@@ -935,21 +860,22 @@ header .bottom .gnb > ul > li > a {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin: 45px auto 40px;
+    column-gap: 30px;
+    row-gap: 12px;
+    margin: 0 auto 50px;
 }
 
 .section-dining .tab-btn li {
     font-size: 22px;
     font-weight: 500;
     color: #192E40;
-    margin: 0 15px 10px 15px;
     cursor: pointer;
     letter-spacing: -0.5px;
-    padding-bottom: 2px;
+    padding-bottom: 1px;
 }
 
 .section-dining .tab-btn li::before {
-    content: "";
+    content: '';
     display: block;
     width: 5px;
     height: 5px;
@@ -962,7 +888,7 @@ header .bottom .gnb > ul > li > a {
 }
 
 .section-dining .tab-btn li::after {
-    content: "";
+    content: '';
     display: block;
     width: 0;
     height: 2px;
@@ -1047,7 +973,7 @@ header .bottom .gnb > ul > li > a {
 }
 
 .section-dining .tab-content .dining_txt h3::after {
-    content: "";
+    content: '';
     display: block;
     width: 30px;
     height: 1px;
@@ -1063,12 +989,8 @@ header .bottom .gnb > ul > li > a {
     display: inline-block;
     margin-top: 30px;
     color: #902e2e;
-    font-weight: 600;
-    font-size: 14px;
-}
-
-.section-dining .tab-content .dining_txt .more:hover {
     font-weight: 700;
+    font-size: 14px;
 }
 
 
@@ -1098,31 +1020,27 @@ header .bottom .gnb > ul > li > a {
 }
 
 .section-fc .content .cont1 {
-    background-image: url("../img/facility1.jpg");
+    background-image: url('../img/facility1.jpg');
 }
 
 .section-fc .content .cont2 {
-    background-image: url("../img/facility2.jpg");
+    background-image: url('../img/facility2.jpg');
 }
 
 .section-fc .content .cont3 {
-    background-image: url("../img/facility3.jpg");
+    background-image: url('../img/facility3.jpg');
 }
 
 .section-fc .content .cont4 {
-    background-image: url("../img/facility4.jpg");
+    background-image: url('../img/facility4.jpg');
 }
 
 .section-fc .content .cont5 {
-    background-image: url("../img/facility5.jpg");
+    background-image: url('../img/facility5.jpg');
 }
 
 .section-fc .content .cont .desc {
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -1156,7 +1074,7 @@ header .bottom .gnb > ul > li > a {
 }
 
 .section-fc .content .cont .desc h2::after {
-    content: "";
+    content: '';
     display: block;
     width: 40px;
     height: 1px;
@@ -1172,10 +1090,15 @@ header .bottom .gnb > ul > li > a {
 
 .section-fc .content .cont .desc .btn {
     border: 1px solid rgba(255, 255, 255, 0.9);
-    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.section-fc .content .cont .desc .btn a {
+.section-fc .content .cont .desc .btn::before {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.section-fc .content .cont .desc .btn > span {
     color: rgba(255, 255, 255, 0.9);
 }
 
@@ -1183,7 +1106,7 @@ header .bottom .gnb > ul > li > a {
     background-color: rgba(255, 255, 255, 0.9);
 }
 
-.section-fc .content .cont .desc .btn:hover a {
+.section-fc .content .cont .desc .btn:hover > span {
     color: #192E40;
 }
 
@@ -1209,7 +1132,6 @@ header .bottom .gnb > ul > li > a {
     cursor: pointer;
     position: absolute;
     top: 0;
-
     transition: 1s;
 }
 
@@ -1246,13 +1168,12 @@ header .bottom .gnb > ul > li > a {
 }
 
 .section-fc .fc_tit .titWrap span::before {
-    content: "";
+    content: '';
     display: block;
     width: 20px;
     height: 1px;
     background-color: #fff;
     margin-bottom: 30px;
-
     transition: 0.5s;
 }
 
@@ -1278,11 +1199,11 @@ header .bottom .gnb > ul > li > a {
 
 /** 리워즈 **/
 .section-rewards .content {
-    margin-top: 80px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20%;
+    column-gap: 20%;
+    row-gap: 40px;
 }
 
 .section-rewards .content .cont {
@@ -1308,13 +1229,13 @@ header .bottom .gnb > ul > li > a {
 footer {
     width: 100%;
     background-color: #142634;
-    margin-top: 80px;
-    color: #fff;
+    margin-top: 6%;
+    color: #dbdbdb;
 }
 
 footer .top {
     padding: 50px 0 40px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    border-bottom: 1px solid #dbdbdb;
 }
 
 footer .bottom {
@@ -1322,49 +1243,46 @@ footer .bottom {
 }
 
 footer .f_logo img {
-    width: 280px;
+    width: 260px;
 }
 
-footer .f_menu {
+footer .fnb_area {
+    width: calc(100% - 200px);
+    margin-top: 35px;
+}
+
+footer .fnb_area .fnb {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     row-gap: 5px;
 }
 
-footer .f_menu li {
+footer .fnb_area .fnb li {
     display: flex;
     align-items: center;
 }
 
-footer .f_menu li::after {
-    content: "";
+footer .fnb_area .fnb li:not(:last-child)::after {
+    content: '';
     display: block;
     width: 1px;
     height: 12px;
-    background-color: rgba(255, 255, 255, 0.8);
-    margin: 0 14px;
+    background-color: #dbdbdb;
+    margin: 0 10px;
 }
 
-footer .f_menu li:last-child:after {
-    display: none;
-}
-
-footer .f_menu li a {
-    color: #fff;
+footer .fnb_area .fnb li a {
+    color: #dbdbdb;
     font-size: 15px;
 }
 
-footer .f_menu1 {
-    margin: 30px 0 9px;
+footer .fnb_area .fnb1 {
+    margin-bottom: 10px;
 }
 
-footer .f_menu2 li::after {
-    height: 10px;
-}
-
-footer .f_menu2 li a {
-    font-size: 13px;
+footer .fnb_area .fnb1 li a {
+    font-weight: 700;
 }
 
 footer .familySite {
@@ -1375,16 +1293,15 @@ footer .familySite {
 
 footer .familySite select {
     width: 180px;
-    border-bottom: 2px solid #fff;
-    color: #fff;
+    border-bottom: 2px solid #dbdbdb;
+    color: #dbdbdb;
     font-size: 16px;
     font-weight: 500;
-    padding: 5px 0;
+    padding-bottom: 5px;
     letter-spacing: 0.5px;
 }
 
 footer .familySite select option {
-    color: #000;
     font-size: 13px;
 }
 
@@ -1397,7 +1314,7 @@ footer .f_info p {
 footer .f_info .copyright {
     font-size: 14px;
     margin-top: 15px;
-    color: rgba(255, 255, 255, 0.85);
+    color: #dbdbdb;
 }
 
 footer .sns {
@@ -1419,17 +1336,28 @@ footer .sns li:last-child {
 
 footer .sns li i {
     font-size: 18px;
-    color: #fff;
+    color: #dbdbdb;
 }
 
 
 
-@media all and (max-width: 1400px) {
-    .container {max-width: 1000px;}
-    
+/** hover **/
+@media screen and (min-width: 1024px) {
+    .section-offers .content .sliderCont:hover {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
 
+    .section-offers .content .sliderCont:hover .offers_image img {
+        transform: scale(1.1);
+    }
+}
+
+
+
+/** 반응형 **/
+@media screen and (max-width: 1400px) {
     /** 객실 **/
-    .section-room .container {
+    .section-room .inner {
         max-width: calc(((100% - 1000px) / 2) + 1000px);
     }
 
@@ -1461,10 +1389,7 @@ footer .sns li i {
 
 
 
-@media all and (max-width: 1200px) {
-    .s-pc {display: block;}
-
-
+@media screen and (max-width: 1200px) {
     /** 예약 **/
     .reservation,
     .reservation ul > li {
@@ -1531,7 +1456,7 @@ footer .sns li i {
 
     /** 리워즈 **/
     .section-rewards .content {
-        gap: 10%;
+        column-gap: 15%;
     }
 
     .section-rewards .content .cont p {
@@ -1541,19 +1466,13 @@ footer .sns li i {
 
 
 
-@media all and (max-width: 1023px) {
-    body.on {overflow: hidden;}
-
-    section h2 {font-size: 41px;}
-    .sec_title p {font-size: 16px;}
-
-
+@media screen and (max-width: 1023px) {
     /** 헤더 **/
     header {
         height: 65px;
     }
 
-    header .container {
+    header .inner {
         width: 95%;
     }
 
@@ -1618,9 +1537,23 @@ footer .sns li i {
     }
 
 
+    /** 메인비주얼 **/
+    .main-visual .cont .txt {
+        height: 98px;
+    }
+
+    .main-visual .cont .txt h1 {
+        font-size: 48px;
+    }
+
+    .main-visual .cont .txt p {
+        font-size: 16px;
+    }
+
+
     /** 예약 **/
     .reservation {
-        margin-bottom: 30px;
+        margin-bottom: 6%;
     }
 
     .reservation,
@@ -1764,62 +1697,53 @@ footer .sns li i {
         font-size: 15px;
     }
 
-
-    /** 리워즈 **/
-    .section-rewards .content .cont p {
-        font-size: 15px;
+    .section-fc-m .sliderCont .fc_txt .btn {
+        border: 1px solid rgba(255, 255, 255, 0.9);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .section-fc-m .sliderCont .fc_txt .btn > span {
+        color: rgba(255, 255, 255, 0.9);
     }
 
+
+    /** 리워즈 **/
     .section-rewards .content .cont img {
         width: 80px;
+    }
+
+    .section-rewards .content .cont p {
+        font-size: 15px;
     }
 
 
     /** 푸터 **/
     footer .top,
     footer .bottom {
-        padding: 35px 0;
+        padding: 36px 0;
     }
 
     footer .f_logo img {
-        width: 230px;
+        width: 240px;
     }
 
-    footer .f_menu li a {
-        font-size: 14px;
+    footer .fnb_area {
+        margin-top: 28px;
     }
 
-    footer .f_menu2 li a {
-        font-size: 13px;
-    }
-
-    footer .familySite {
-        bottom: unset;
-        top: 0;
-    }
-
-    footer .familySite select {
-        font-size: 15px;
-    }
-
+    footer .fnb_area .fnb li a,
     footer .f_info p {
         font-size: 14px;
-    }
-
-    footer .f_info .copyright {
-        font-size: 13px;
     }
 }
 
 
 
-@media all and (max-width: 780px) {
-    .section {padding: 60px 0;}
-
-    .section-offers .content,
-    .section-room .room_image_wrap,
-    .section-rewards .content {
-        margin-top: 50px;
+@media screen and (max-width: 780px) {
+    /** 메인비주얼 **/
+    .main-visual .cont .slide_bar {
+        margin-top: 8%;
     }
 
 
@@ -1834,8 +1758,16 @@ footer .sns li i {
         display: none;
     }
 
+    .section-room .room_image_wrap .room_image {
+        width: 450px;
+    }
+
 
     /** 다이닝 **/
+    .section-dining .tab-btn {
+        margin-bottom: 40px;
+    }
+
     .section-dining .tab-content {
         width: 100%;
     }
@@ -1847,47 +1779,28 @@ footer .sns li i {
     }
 
     .section-rewards .content .cont img {
-        width: 65px;
+        width: 70px;
     }
 
     .section-rewards .content .cont p {
-        margin-top: 20px;
-        font-size: 14px;
-        line-height: 1.5;
+        margin-top: 25px;
     }
 
 
     /** 하단 **/
-    footer {
-        margin-top: 40px;
+    footer .fnb_area {
+        width: 100%;
     }
 
-    footer .f_menu1 {
-        margin: 24px 0 8px;
-    }
-
-    footer .f_menu li::after {
-        margin: 0 10px;
-    }
-
-    footer .f_menu li a {
-        font-size: 13px;
-    }
-
-    footer .f_menu2 li a {
-        font-size: 12px;
+    footer .familySite {
+        position: relative;
+        top: unset;
+        right: unset;
+        margin-top: 25px;
     }
 
     footer .familySite select {
         width: 170px;
-    }
-
-    footer .f_info p {
-        font-size: 13px;
-    }
-
-    footer .f_info .copyright {
-        font-size: 12px;
     }
 
     footer .sns {
@@ -1903,28 +1816,7 @@ footer .sns li i {
 
 
 
-@media all and (max-width: 530px) {
-    .section {padding: 40px 0;}
-    section h2 {font-size: 32px;}
-    section h3 {font-size: 18px;}
-    section p {font-size: 14px;}
-    
-    .sec_title p {margin-top: 16px; font-size: 14px;}
-    .sec_title::after {margin: 20px auto;}
-
-    .btn {width: 125px !important; height: 40px !important; margin-top: 30px;}
-    .btn > a {font-size: 13px !important;}
-
-    .mo {display: block;}
-
-    .section-offers .content,
-    .section-room .room_image_wrap,
-    .section-rewards .content,
-    .slick-custom-dots {
-        margin-top: 35px;
-    }
-
-
+@media screen and (max-width: 530px) {
     /** 헤더 **/
     header .top .logo {
         height: 26px;
@@ -1964,20 +1856,19 @@ footer .sns li i {
 
     /** 메인 **/
     .main-visual {
-        height: 60vh;
+        height: 80vh;
     }
 
     .main-visual .cont .txt {
-        height: 65px;
+        height: 82px;
     }
 
     .main-visual .cont .txt h1 {
-        font-size: 29px;
+        font-size: 35px;
     }
 
     .main-visual .cont .txt p {
-        font-size: 12px;
-        margin-top: 8px;
+        font-size: 14px;
     }
 
     .main-visual .cont .slide_bar .bar {
@@ -2001,7 +1892,7 @@ footer .sns li i {
 
 
     /** 스페셜오퍼 **/
-    .section-offers .container {
+    .section-offers .inner {
         width: 100%;
     }
 
@@ -2028,6 +1919,10 @@ footer .sns li i {
 
 
     /** 객실 **/
+    .section-room .sec_title {
+        margin-bottom: 30px;
+    }
+
     .section-room .sec_title h2 em {
         font-size: 25px;
     }
@@ -2037,8 +1932,7 @@ footer .sns li i {
     }
 
     .section-room .room_desc p {
-        padding-top: 20px;
-        padding-right: 10%;
+        padding-right: 20%;
         box-sizing: border-box;
         font-size: 14px;
     }
@@ -2051,14 +1945,23 @@ footer .sns li i {
         display: block;
     }
 
+    .section-room .room_image_wrap {
+        margin-top: 40px;
+    }
+
+    .section-room .room_image_wrap .room_image {
+        width: 300px;
+        border-radius: 20px;
+    }
+
 
     /** 다이닝 **/
-    .section-dining .container {
+    .section-dining .inner {
         width: 100%;
     }
 
     .section-dining .tab-btn {
-        margin: 30px auto;
+        column-gap: 20px;
     }
 
     .section-dining .tab-btn li {
@@ -2100,7 +2003,7 @@ footer .sns li i {
 
     /** 부대시설 : 모바일 **/
     .section-fc-m .sliderCont {
-        height: 280px;
+        height: 300px;
     }
     .section-fc-m .sliderCont .fc_txt h2 {
         font-size: 27px;
@@ -2108,60 +2011,42 @@ footer .sns li i {
 
     .section-fc-m .sliderCont .fc_txt p {
         font-size: 12px;
+        margin-top: 17px;
+    }
+
+    .section-fc-m .sliderCont .fc_txt .btn {
+        margin-top: 20px;
     }
 
 
     /** 리워즈 **/
-    .section-rewards .container {
+    .section-rewards .inner {
         width: 100%;
     }
 
-    .section-rewards .content .cont img {
-        width: 50px;
-    }
-
     .section-rewards .content .cont p {
-        font-size: 13px;
-        margin-top: 15px;
+        margin-top: 18px;
+        font-size: 14px;
     }
 
     
     /** 푸터 **/
-    footer .top,
-    footer .bottom {
-        padding: 25px 0;
-    }
-
     footer .f_logo img {
-        width: 180px;
+        width: 200px;
     }
 
-    footer .f_menu li::after {
+    footer .fnb_area .fnb li::after {
         height: 10px;
     }
 
-    footer .f_menu li a {
-        font-size: 12px;
-    }
-
-    footer .f_menu2 li a {
-        font-size: 11px;
-    }
-
-    footer .familySite {
-        position: relative;
-        top: unset;
-        right: unset;
-        margin-top: 20px;
-    }
-
     footer .familySite select {
-        font-size: 13px;
+        font-size: 14px;
     }
 
+    footer .fnb_area .fnb li a,
     footer .f_info p,
     footer .f_info .copyright {
-        font-size: 11px;
+        font-size: 13px;
     }
 
     footer .sns {
@@ -2170,9 +2055,5 @@ footer .sns li i {
 
     footer .sns li {
         margin-right: 15px;
-    }
-
-    footer .sns li i {
-        font-size: 15px;
     }
 }

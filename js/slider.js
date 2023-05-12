@@ -25,7 +25,8 @@ $(".section-room .slider").slick({
     draggable : true,
     arrows: false,
     variableWidth: true,
-    swipeToSlide: true
+    swipeToSlide: true,
+    infinite: false
 });
 
 $(".section-room .slider").on('beforeChange', function(event, slick, currentSlide, nextSlide){
