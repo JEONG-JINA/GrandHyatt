@@ -763,7 +763,7 @@ header .bottom .gnb > ul > li > a {
 
 /** 객실 **/
 .section-room {
-    background-image: url('img/sec3_bg.jpg');
+    background-image: url('/GrandHyatt/img/sec3_bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1020,23 +1020,23 @@ header .bottom .gnb > ul > li > a {
 }
 
 .section-fc .content .cont1 {
-    background-image: url('../img/facility1.jpg');
+    background-image: url('/GrandHyatt/img/facility1.jpg');
 }
 
 .section-fc .content .cont2 {
-    background-image: url('../img/facility2.jpg');
+    background-image: url('/GrandHyatt/img/facility2.jpg');
 }
 
 .section-fc .content .cont3 {
-    background-image: url('../img/facility3.jpg');
+    background-image: url('/GrandHyatt/img/facility3.jpg');
 }
 
 .section-fc .content .cont4 {
-    background-image: url('../img/facility4.jpg');
+    background-image: url('/GrandHyatt/img/facility4.jpg');
 }
 
 .section-fc .content .cont5 {
-    background-image: url('../img/facility5.jpg');
+    background-image: url('/GrandHyatt/img/facility5.jpg');
 }
 
 .section-fc .content .cont .desc {
