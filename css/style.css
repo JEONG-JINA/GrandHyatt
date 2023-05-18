@@ -311,7 +311,7 @@ header .bottom .gnb > ul > li > a {
 }
 
 .side .top {
-    padding: 3% 5% 2%;
+    padding: 4% 5% 3%;
     box-sizing: border-box;
     border-bottom: 5px solid #192E40;
     background-color: #fff;
@@ -322,8 +322,8 @@ header .bottom .gnb > ul > li > a {
 
 .side .top .logo {
     width: 50%;
-    max-width: 220px;
-    margin-bottom: 10%;
+    max-width: 200px;
+    margin-bottom: 12%;
 }
 
 .side .top .logo img {
@@ -436,7 +436,7 @@ header .bottom .gnb > ul > li > a {
     font-size: 14px;
     letter-spacing: 0.5px;
     padding-bottom: 5px;
-    appearance: auto;
+    background: url('/GrandHyatt/img/arrow.png') no-repeat 95% 50%;
 }
 
 .side .mo_btn {
@@ -1294,12 +1294,14 @@ footer .familySite {
 
 footer .familySite select {
     width: 180px;
-    border-bottom: 2px solid #dbdbdb;
+    border: 2px solid #dbdbdb;
     color: #dbdbdb;
     font-size: 16px;
     font-weight: 500;
-    padding-bottom: 5px;
+    padding-bottom: 8px;
+    box-sizing: border-box;
     letter-spacing: 0.5px;
+    background: url('/GrandHyatt/img/arrow.png') no-repeat 95% 50%;
 }
 
 footer .familySite select option {
