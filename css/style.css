@@ -315,9 +315,6 @@ header .bottom .gnb > ul > li > a {
     box-sizing: border-box;
     border-bottom: 5px solid #192E40;
     background-color: #fff;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
 }
 
 .side .top .logo {
