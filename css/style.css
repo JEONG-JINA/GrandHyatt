@@ -436,6 +436,7 @@ header .bottom .gnb > ul > li > a {
     font-size: 14px;
     letter-spacing: 0.5px;
     padding-bottom: 5px;
+    appearance: auto;
 }
 
 .side .mo_btn {
@@ -451,7 +452,7 @@ header .bottom .gnb > ul > li > a {
     width: 90%;
     height: 2px;
     position: absolute;
-    top: 45%;
+    top: 46%;
     left: 4%;
 }
 
@@ -1829,7 +1830,7 @@ footer .sns li i {
     }
 
     .side .top {
-        padding: 5% 5% 3%;
+        padding: 6% 5% 4%;
     }
 
     .side .gnb > ul > li {

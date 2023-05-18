@@ -167,7 +167,7 @@
     letter-spacing: -0.5px;
 }
 
-.wd_section .content .wd_txt b {
+.wd_section .content .wd_txt h3 {
     color: #192E40;
     font-size: 30px;
 }
@@ -179,12 +179,13 @@
     font-size: 17px;
 }
 
-.wd_section .content .wd_txt p > strong {
+.wd_section .content .wd_txt p > b {
     color: #902e2e;
 }
 
-.wd_section .content .wd_txt .btnWrap .btn {
-    float: left;
+.wd_section .content .wd_txt .btnWrap {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .wd_section .content .wd_txt .btnWrap .btn:first-child {
@@ -357,7 +358,7 @@
 
 
     /** 웨딩 **/
-    .wd_section .content .wd_txt b {
+    .wd_section .content .wd_txt h3 {
         font-size: 28px;
     }
 
@@ -450,7 +451,7 @@
         height: 130px;
     }
 
-    .wd_section .content .wd_txt b {
+    .wd_section .content .wd_txt h3 {
         font-size: 26px;
     }
 
@@ -569,7 +570,7 @@
         text-align: center;
     }
 
-    .wd_section .content .wd_txt b {
+    .wd_section .content .wd_txt h3 {
         font-size: 22px;
     }
 
@@ -578,7 +579,6 @@
     }
 
     .wd_section .content .wd_txt .btnWrap {
-        display: flex;
         justify-content: center;
     }
 
