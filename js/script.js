@@ -1,17 +1,15 @@
-var i
-i = 0;
-
-$(document).ready(function(){
-    sec_main();
-    sec_fc();
-    $(".main-visual .cont .txt").addClass("on");
-});
-
-    
-// 헤더
 var scr_top = $(window).scrollTop();
 var win_w = $(window).outerWidth();
 
+var i
+i = 0;
+
+sec_main();
+sec_fc();
+$(".main-visual .cont .txt").addClass("on");
+
+
+// 헤더
 $(window).scroll(function(){
     hd_scr();
 });
@@ -87,6 +85,8 @@ if(win_w > 1023) {
 }
 
 $(window).resize(function(){
+    var win_w = $(window).outerWidth();
+    
     if(win_w > 1023) {
         mobile_remove();
     }
