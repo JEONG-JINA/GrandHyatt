@@ -311,7 +311,6 @@ header .bottom .gnb > ul > li > a {
 }
 
 .side .top {
-    height: 25%;
     padding: 3% 5% 2%;
     box-sizing: border-box;
     border-bottom: 5px solid #192E40;
@@ -324,6 +323,7 @@ header .bottom .gnb > ul > li > a {
 .side .top .logo {
     width: 50%;
     max-width: 220px;
+    margin-bottom: 10%;
 }
 
 .side .top .logo img {
