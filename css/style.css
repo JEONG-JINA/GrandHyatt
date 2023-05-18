@@ -435,8 +435,9 @@ header .bottom .gnb > ul > li > a {
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.5px;
-    padding-bottom: 5px;
+    padding: 5px 0;
     background: url('/GrandHyatt/img/arrow.png') no-repeat 95% center;
+    width: 95px;
 }
 
 .side .mo_btn {
@@ -1248,7 +1249,7 @@ footer .f_logo img {
 }
 
 footer .fnb_area {
-    width: calc(100% - 200px);
+    width: calc(100% - 210px);
     margin-top: 35px;
 }
 
@@ -1293,12 +1294,12 @@ footer .familySite {
 }
 
 footer .familySite select {
-    width: 180px;
+    width: 185px;
     border: 2px solid #dbdbdb;
     color: #dbdbdb;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
-    padding: 8px;
+    padding: 9px 12px;
     box-sizing: border-box;
     letter-spacing: 0.5px;
     background: url('/GrandHyatt/img/arrow.png') no-repeat 95% center;
