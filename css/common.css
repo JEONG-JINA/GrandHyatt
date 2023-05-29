@@ -19,7 +19,7 @@ body {
     display: none;
 }
 
-select {
+select.whiteArrow {
     background-color:transparent;
     border: none;
     cursor: pointer;
@@ -28,7 +28,7 @@ select {
     -moz-appearance: none;
 }
 
-select::-ms-expand {
+select.whiteArrow::-ms-expand {
     display: none;
 }
 
