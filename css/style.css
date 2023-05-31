@@ -517,7 +517,7 @@ header .bottom .gnb > ul > li > a {
 }
 
 .main-visual .cont .txt h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', 'Noto Sans KR', serif, sans-serif;
     font-size: 52px;
     font-weight: 400;
     text-transform: uppercase;
