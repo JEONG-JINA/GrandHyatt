@@ -526,7 +526,6 @@ header .bottom .gnb > ul > li > a {
 }
 
 .main-visual .cont .txt span {
-    display: block;
     letter-spacing: -0.3px;
     font-size: 17px;
     font-weight: 300;
@@ -1827,7 +1826,7 @@ footer .sns li i {
 
     /** 모바일 메뉴 **/
     .side {
-        width: 100%;
+        width: 85%;
     }
 
     .side .top {
