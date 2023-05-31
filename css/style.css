@@ -522,11 +522,12 @@ header .bottom .gnb > ul > li > a {
     font-weight: 400;
     text-transform: uppercase;
     color: #fff;
+    line-height: 1.5;
 }
 
-.main-visual .cont .txt p {
+.main-visual .cont .txt span {
+    display: block;
     letter-spacing: -0.3px;
-    margin-top: 12px;
     font-size: 17px;
     font-weight: 300;
     color: #fff;
@@ -787,7 +788,7 @@ header .bottom .gnb > ul > li > a {
     line-height: 1.4;
 }
 
-.section-room .sec_title h2 em {
+.section-room .sec_title h2 i {
     font-size: 38px;
     color: #902e2e;
     letter-spacing: 1px;
@@ -1547,7 +1548,7 @@ footer .sns li i {
         font-size: 48px;
     }
 
-    .main-visual .cont .txt p {
+    .main-visual .cont .txt span {
         font-size: 16px;
     }
 
@@ -1610,7 +1611,7 @@ footer .sns li i {
 
 
     /** 객실 **/
-    .section-room .sec_title h2 em {
+    .section-room .sec_title h2 i {
         font-size: 32px;
     }
 
@@ -1868,7 +1869,7 @@ footer .sns li i {
         font-size: 35px;
     }
 
-    .main-visual .cont .txt p {
+    .main-visual .cont .txt span {
         font-size: 14px;
     }
 
@@ -1929,7 +1930,7 @@ footer .sns li i {
         margin-bottom: 30px;
     }
 
-    .section-room .sec_title h2 em {
+    .section-room .sec_title h2 i {
         font-size: 25px;
     }
 
