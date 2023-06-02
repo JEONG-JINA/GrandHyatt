@@ -224,6 +224,13 @@
 
 
 /** 문의하기 **/
+.inq_section .required {
+    color: #902e2e;
+    text-align: right;
+    font-size: 13px;
+    letter-spacing: -0.5px;
+}
+
 .inq_section table,
 .inq_section tbody,
 .inq_section tr {

@@ -146,10 +146,13 @@ section p {
     border-radius: 50%;
     text-indent: -9999px;
     background-color: #d5d5d5;
+    transition: 0.3s;
 }
 
 .slick-custom-dots li.slick-active button {
     background-color: #192E40;
+    width: 25px;
+    border-radius: 35px;
 }
 
 

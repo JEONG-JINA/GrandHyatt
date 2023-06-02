@@ -234,48 +234,51 @@
                     <h2>이용문의</h2>
                     <p>그랜드 하얏트 서울의 문의사항을 남겨주세요.</p>
                 </div>
-                <form>
-                    <table>
-                        <tr id="category">
-                            <th>문의유형</th>
-                            <td>
-                                <input type="radio" name="category" id="use" value="use">
-                                <label for="use">예약/시설 이용</label>
-                                <br class="mo">
-                                <input type="radio" name="category" id="rewards" value="rewards">
-                                <label for="rewards">하얏트 리워즈</label>
-                                <br class="mo">
-                                <input type="radio" name="category" id="inconv" value="inconv">
-                                <label for="inconv">불편사항</label>
-                            </td>
-                        </tr>
-                        <tr id="name">
-                            <th>성명</th>
-                            <td>
-                                <input type="text" name="name" required>
-                            </td>
-                        </tr>
-                        <tr id="phone">
-                            <th>전화번호</th>
-                            <td>
-                                <input type="tel" name="phone" required>
-                            </td>
-                        </tr>
-                        <tr id="mail">
-                            <th>이메일</th>
-                            <td>
-                                <input type="email" name="mail">
-                            </td>
-                        </tr>
-                        <tr id="content">
-                            <th>내용</th>
-                            <td>
-                                <textarea cols="50" rows="10" required></textarea>
-                            </td>
-                        </tr>
-                    </table>
-                    <input type="submit">
-                </form>
+                <div class="content">
+                    <span class="required">*표시는 필수 입력 사항입니다.</span>
+                    <form>
+                        <table>
+                            <tr id="category">
+                                <th>문의유형</th>
+                                <td>
+                                    <input type="radio" name="category" id="use" value="use">
+                                    <label for="use">예약/시설 이용</label>
+                                    <br class="mo">
+                                    <input type="radio" name="category" id="rewards" value="rewards">
+                                    <label for="rewards">하얏트 리워즈</label>
+                                    <br class="mo">
+                                    <input type="radio" name="category" id="inconv" value="inconv">
+                                    <label for="inconv">불편사항</label>
+                                </td>
+                            </tr>
+                            <tr id="name">
+                                <th>성명</th>
+                                <td>
+                                    <input type="text" name="name" required>
+                                </td>
+                            </tr>
+                            <tr id="phone">
+                                <th>전화번호</th>
+                                <td>
+                                    <input type="tel" name="phone" required>
+                                </td>
+                            </tr>
+                            <tr id="mail">
+                                <th>이메일</th>
+                                <td>
+                                    <input type="email" name="mail">
+                                </td>
+                            </tr>
+                            <tr id="content">
+                                <th>내용</th>
+                                <td>
+                                    <textarea cols="50" rows="10" required></textarea>
+                                </td>
+                            </tr>
+                        </table>
+                        <input type="submit">
+                    </form>
+                </div>
             </div>
         </section>
     </main>
