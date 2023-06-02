@@ -606,6 +606,10 @@
 
 
     /** 문의하기 **/
+    .inq_section .required {
+        font-size: 12px;
+    }
+
     .inq_section table tr {
         padding: 20px 0;
     }
