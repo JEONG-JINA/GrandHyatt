@@ -471,7 +471,7 @@ header .bottom .gnb > ul > li > a {
     overflow: hidden;
 }
 
-.main-visual::before {
+.main-visual::after {
     content: '';
     display: block;
     width: 100%;
@@ -610,6 +610,7 @@ header .bottom .gnb > ul > li > a {
     left: 0;
     text-align: center;
     overflow: hidden;
+    z-index: 1;
 }
 
 .main-visual .mainTxt h1 {
@@ -645,6 +646,7 @@ header .bottom .gnb > ul > li > a {
     bottom: 15%;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 100;
 }
 
 .main-visual .slick-main-bar li:not(:last-child) {
