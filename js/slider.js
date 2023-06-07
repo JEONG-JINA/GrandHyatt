@@ -3,7 +3,7 @@ $(".main-visual .slider").slick({
     fade: true,
     autoplay: true,
     autoplaySpeed: 5000,
-    speed: 3000,
+    speed: 2000,
     pauseOnHover: false,
     pauseOnFocus: false,
     draggable : true,
