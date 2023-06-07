@@ -468,6 +468,7 @@ header .bottom .gnb > ul > li > a {
 .main-visual {
     width: 100%;
     height: 90vh;
+    overflow: hidden;
 }
 
 .main-visual::after {
