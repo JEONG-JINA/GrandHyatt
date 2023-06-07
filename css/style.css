@@ -577,10 +577,9 @@ header .bottom .gnb > ul > li > a {
 .main-visual .cont .slide_bar .bar.active .ac_bar {
     width: 100%;
 }*/
-.main-visual .slider,
 .main-visual .sliderImg {
     width: 100%;
-    height: 100%;
+    height: 90vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
