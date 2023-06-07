@@ -3,6 +3,7 @@ $(".main-visual .slider").slick({
     fade: true,
     autoplay: true,
     autoplaySpeed: 5000,
+    speed: 3000,
     pauseOnHover: false,
     pauseOnFocus: false,
     draggable : true,
@@ -10,7 +11,7 @@ $(".main-visual .slider").slick({
     swipeToSlide: true,
     slideToShow: 1,
     dots: true,
-    dotsClass: 'slick-custom-dots'
+    dotsClass: 'slick-main-bar'
 });
 
 

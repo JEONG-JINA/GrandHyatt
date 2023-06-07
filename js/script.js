@@ -2,7 +2,7 @@ var scr_top = $(window).scrollTop();
 var win_w = $(window).outerWidth();
 var i = 0;
 
-sec_main();
+//sec_main();
 sec_fc();
 $(".main-visual .mainTxt").addClass("on");
 
