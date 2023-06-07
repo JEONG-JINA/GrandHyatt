@@ -471,7 +471,7 @@ header .bottom .gnb > ul > li > a {
     overflow: hidden;
 }
 
-.main-visual::after {
+.main-visual .slick-list::before {
     content: '';
     display: block;
     width: 100%;
