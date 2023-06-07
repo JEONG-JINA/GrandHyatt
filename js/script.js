@@ -1,12 +1,10 @@
 var scr_top = $(window).scrollTop();
 var win_w = $(window).outerWidth();
-
-var i
-i = 0;
+var i = 0;
 
 sec_main();
 sec_fc();
-$(".main-visual .cont .txt").addClass("on");
+$(".main-visual .mainTxt").addClass("on");
 
 
 // 헤더
@@ -93,8 +91,8 @@ $(window).resize(function(){
 });
 
 
-// 메인
-$(".main-visual .cont .slide_bar .bar").click(function(){
+// 메인 슬라이드
+/*$(".main-visual .cont .slide_bar .bar").click(function(){
     clearInterval(_mainSlide);
     i = $(this).index();
     sec_main();
@@ -116,7 +114,7 @@ function sec_main_active(){
     sec_main();
 }
 
-_mainSlide = setInterval(sec_main_active,7000);
+_mainSlide = setInterval(sec_main_active,7000);*/
 
 
 // 다이닝

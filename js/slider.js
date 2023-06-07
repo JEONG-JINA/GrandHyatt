@@ -1,3 +1,19 @@
+// 메인 슬라이드
+$(".main-visual .slider").slick({
+    fade: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    pauseOnHover: false,
+    pauseOnFocus: false,
+    draggable : true,
+    arrows: false,
+    swipeToSlide: true,
+    slideToShow: 1,
+    dots: true,
+    dotsClass: 'slick-custom-dots'
+});
+
+
 // 스페셜오퍼
 $(".section-offers .slider").slick({
     autoplay: true,
