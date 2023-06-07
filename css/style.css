@@ -471,7 +471,7 @@ header .bottom .gnb > ul > li > a {
     overflow: hidden;
 }
 
-.main-visual::after {
+.main-visual::before {
     content: '';
     display: block;
     width: 100%;
@@ -608,7 +608,6 @@ header .bottom .gnb > ul > li > a {
     position: absolute;
     top: 42%;
     left: 0;
-    z-index: 1;
     text-align: center;
     overflow: hidden;
 }
@@ -643,7 +642,7 @@ header .bottom .gnb > ul > li > a {
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: 10%;
+    bottom: 15%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -654,14 +653,14 @@ header .bottom .gnb > ul > li > a {
 
 .main-visual .slick-main-bar button {
     text-indent: -9999px;
-    width: 5%;
-    height: 1px;
+    width: 10%;
+    height: 2px;
     background-color: rgba(255, 255, 255, 0.3);
     transform: 0.4s;
 }
 
 .main-visual .slick-main-bar .slick-active button {
-    width: 10%;
+    width: 20%;
     background-color: rgba(255, 255, 255, 0.9);
 }
 
