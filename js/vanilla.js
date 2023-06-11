@@ -39,8 +39,8 @@ const hdLnb = header.querySelectorAll('.lnb');
 const menuBg = document.querySelector('header .menu_bg');
 
 function slideDown(el) {
-    el.style.display = 'block';
-    el.style.height = '0px';
+    //el.style.display = 'block';
+    //el.style.height = '0px';
   
     let height = el.scrollHeight;
   
@@ -104,7 +104,7 @@ function slideToggle(el) {
 
 //모바일 메뉴
 const body = document.querySelector('body');
-const mobileOnly = document.querySelector('.mobile_only');
+const mobileOnly = document.querySelector('.mobile-only');
 const side = document.querySelector('.side');
 const sdGnb = side.querySelectorAll('.gnb > ul > li');
 const sdLnb = side.querySelectorAll('.lnb');
