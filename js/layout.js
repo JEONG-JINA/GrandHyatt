@@ -5,8 +5,6 @@ let i = 0;
 
 //반응형
 window.addEventListener('resize', function() {
-    const win_w = window.outerWidth;
-
     hd_scroll();
     mobile_remove();
 });
@@ -16,6 +14,7 @@ window.addEventListener('resize', function() {
 //헤더
 function hd_scroll() {
     window.addEventListener('scroll', function(){
+        const win_w = window.outerWidth;
         const scr_top = window.scrollY || document.documentElement.scrollTop;
 
         if (win_w > 1023 && scr_top > 65) {
@@ -118,6 +117,8 @@ const hdMobileBtn = header.querySelector('.mo_btn');
 const mobileBtn = mobileMenu.querySelector('.mo_btn');
 
 function mobile_remove() {
+    const win_w = window.outerWidth;
+    
     if (win_w > 1023) {
         body.classList.remove('on');
         mobileMenu.classList.remove('on');
