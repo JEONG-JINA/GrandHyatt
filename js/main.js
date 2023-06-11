@@ -28,26 +28,23 @@ tabBtn.forEach(function(item, index) {
 //부대시설
 const fcTit = document.querySelectorAll('.section-fc .fc_tit .titWrap');
 const fcContent = document.querySelectorAll('.section-fc .content .cont');
-
-function sec_fc() {
-    fcTit.forEach(function(item, index) {
-        item.classList.toggle('on', index === i);
-
-        if (index <= i) {
-            item.style.left = i * 6 + '%';
-        } else {
-            item.style.left = 100 - Math.abs(i - 5) * 6 + '%';
-        }
-    });
-  
-    fcContent.forEach(function(item, index) {
-        item.classList.toggle('on', index === i);
-    });
-}
   
 fcTit.forEach(function(item, index) {
     item.addEventListener('click', function() {
-        i = index;
-        sec_fc();
+        var i = index;
+        
+        fcTit.forEach(function(fcTitItem, fcTitIndex) {
+            fcTitItem.classList.toggle('on', fcTitIndex === i);
+    
+            if (fcTitIndex <= i) {
+                fcTitItem.style.left = i * 6 + '%';
+            } else {
+                fcTitItem.style.left = 100 - Math.abs(i - 5) * 6 + '%';
+            }
+        });
+      
+        fcContent.forEach(function(fcConItem, fcConIndex) {
+            fcConItem.classList.toggle('on', fcConIndex === i);
+        });
     });
 });
