@@ -1119,19 +1119,19 @@ header .bottom .gnb > ul > li > a {
 }
 
 .section-fc .fc_tit .titWrap2 {
-    right: calc(18% - 1px);
+    left: calc((100% - 24%) + 3px);
 }
 
 .section-fc .fc_tit .titWrap3 {
-    right: calc(12% - 1px);
+    left: calc((100% - 18%) + 2px);
 }
 
 .section-fc .fc_tit .titWrap4 {
-    right: calc(6% - 1px);
+    left: calc((100% - 12%) + 1px);
 }
 
 .section-fc .fc_tit .titWrap5 {
-    right: 0;
+    left: calc(100% - 6%);
 }
 
 .section-fc .fc_tit .titWrap span {
