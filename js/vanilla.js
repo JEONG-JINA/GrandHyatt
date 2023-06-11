@@ -36,7 +36,7 @@ hd_scroll();
 const header = document.querySelector('header');
 const hdGnb = header.querySelectorAll('.gnb > ul > li');
 const hdLnb = header.querySelectorAll('.lnb');
-const menuBg = document.querySelector("header .menu_bg");
+const menuBg = document.querySelector('header .menu_bg');
 
 function slideDown(el) {
     el.style.display = 'block';
@@ -154,6 +154,13 @@ sdGnb.forEach(function(item) {
         item.querySelector('.lnb').style.display = 'block';
     });
 });
+
+
+
+//메인비주얼
+const mainTxt = document.querySelector('.main-visual .mainTxt');
+
+mainTxt.classList.add('on');
 
 
 
