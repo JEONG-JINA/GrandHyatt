@@ -2,37 +2,34 @@ var scr_top = $(window).scrollTop();
 var win_w = $(window).outerWidth();
 var i = 0;
 
-sec_fc();
-$(".main-visual .mainTxt").addClass("on");
 
-
-// 헤더
-$(window).scroll(function(){
-    hd_scr();
-});
-
+//반응형
 $(window).resize(function(){
-    $(window).scroll(function(){
-        hd_scr();
-    });
+    hd_scr();
+    mobile_remove();
 });
 
+
+//헤더
 function hd_scr() {
-    var scr_top = $(window).scrollTop();
-    var win_w = $(window).outerWidth();
+    $(window).scroll(function() {
+        var scr_top = $(window).scrollTop();
+        var win_w = $(window).outerWidth();
 
-    if(win_w > 1023 && scr_top > 65) {
-        $("header").addClass("fixed");
-    }else {
-        $("header").removeClass("fixed");
-    };
+        if(win_w > 1023 && scr_top > 65) {
+            $("header").addClass("fixed");
+        } else {
+            $("header").removeClass("fixed");
+        };
 
-    if (win_w <= 1023 && scr_top > 65) {
-        $("header").addClass("m-fixed");
-    }else {
-        $("header").removeClass("m-fixed");
-    };
+        if (win_w <= 1023 && scr_top > 65) {
+            $("header").addClass("m-fixed");
+        }else {
+            $("header").removeClass("m-fixed");
+        };
+    });
 }
+hd_scr();
 
 $("header .gnb > ul > li").on("mouseenter focusin", function(){
     $("header .lnb").stop().slideDown();
@@ -51,7 +48,7 @@ $("header .top ._menu .lang > span").click(function(){
 });
 
 
-// 모바일 메뉴
+//모바일 메뉴
 $("header .top .mo_btn").click(function(){
     $("body").addClass("on")
     $(".mobile-only").addClass("on")
@@ -69,25 +66,22 @@ $(".side .gnb > ul > li").click(function(){
 });
 
 function mobile_remove() {
-    $("body").removeClass("on");
-    $(".mobile-only").removeClass("on");
-    $(".side .gnb > ul  > li").removeClass("on");
-    $(".side .gnb > ul  > li").find(".lnb").hide();
-    $(".side .gnb > ul  > li:first-child").addClass("on");
-    $(".side .gnb > ul  > li:first-child").find(".lnb").show();
-}
-
-if(win_w > 1023) {
-    mobile_remove();
-}
-
-$(window).resize(function(){
     var win_w = $(window).outerWidth();
-    
+
     if(win_w > 1023) {
-        mobile_remove();
+        $("body").removeClass("on");
+        $(".mobile-only").removeClass("on");
+        $(".side .gnb > ul  > li").removeClass("on");
+        $(".side .gnb > ul  > li").find(".lnb").hide();
+        $(".side .gnb > ul  > li:first-child").addClass("on");
+        $(".side .gnb > ul  > li:first-child").find(".lnb").show();
     }
-});
+}
+mobile_remove();
+
+
+//메인비주얼
+$(".main-visual .mainTxt").addClass("on");
 
 
 // 다이닝
@@ -109,8 +103,8 @@ function sec_fc(){
 
     $(".section-fc .content .cont").eq(i).stop().fadeIn();
     $(".section-fc .content .cont").not($(".section-fc .content .cont").eq(i)).stop().fadeOut();
-    item = $(".section-fc .fc_tit .titWrap");
-    active_item = $(".section-fc .fc_tit .titWrap").eq(i);
+    var item = $(".section-fc .fc_tit .titWrap");
+    var active_item = $(".section-fc .fc_tit .titWrap").eq(i);
     item.each(function(inx){
         if(inx <= i){
             $(this).css({left:inx*6+"%"});
@@ -122,22 +116,22 @@ function sec_fc(){
 }
 
 $(".section-fc .fc_tit .titWrap").click(function(){
-    i = $(this).index();
+    var i = $(this).index();
     sec_fc();
 });
 
 
 // 주변즐길거리
 $(window).scroll(function(){
-    win_h = $(window).height();
-    scr_top = $(window).scrollTop();
+    var win_h = $(window).height();
+    var scr_top = $(window).scrollTop();
 
     atr_cont();
 });
 
 $(".atr_section .filter li").click(function(){
-    _name = $(this).attr("data-name");
-    i =  $(this).index();
+    var _name = $(this).attr("data-name");
+    var i =  $(this).index();
     atr_filter();
 });
 

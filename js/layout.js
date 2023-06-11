@@ -12,11 +12,12 @@ window.addEventListener('resize', function() {
 
 
 //헤더
+const header = document.querySelector('header');
+
 function hd_scroll() {
     window.addEventListener('scroll', function(){
         const win_w = window.outerWidth;
         const scr_top = window.scrollY || document.documentElement.scrollTop;
-        const header = document.querySelector('header');
 
         if (win_w > 1023 && scr_top > 65) {
             header.classList.add('fixed');
