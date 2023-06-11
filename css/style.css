@@ -996,15 +996,6 @@ header .bottom .gnb > ul > li > a {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    /*
-    opacity: 0;
-    z-index: 0;
-    transition: opacity 0.3s;*/
-}
-
-.section-fc .content .cont.on {
-    z-index: 1;
-    opacity: 1;
 }
 
 .section-fc .content .cont1 {
@@ -1105,7 +1096,6 @@ header .bottom .gnb > ul > li > a {
     top: 0;
     left: 0;
     display: flex;
-    z-index: 1;
 }
 
 .section-fc .fc_tit .titWrap {
@@ -1120,6 +1110,7 @@ header .bottom .gnb > ul > li > a {
     cursor: pointer;
     position: absolute;
     top: 0;
+    z-index: 10;
     transition: 1s;
 }
 
