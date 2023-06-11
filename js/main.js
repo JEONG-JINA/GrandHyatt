@@ -51,8 +51,9 @@ fcTit.forEach(function(item, index) {
 });
 */
 $(function() {
-    $(".section-fc .fc_tit .titWrap").click(function() {
-        var i = $(this).index();
+    sec_fc();
+    
+    function sec_fc() {
         var fcTitItem = $(".section-fc .fc_tit .titWrap");
         
         fcTitItem.each(function(clickedItem) {
@@ -67,5 +68,10 @@ $(function() {
         $(".section-fc .fc_tit .titWrap").not($(".section-fc .fc_tit .titWrap").eq(i)).removeClass("on");
         $(".section-fc .content .cont").eq(i).stop().fadeIn();
         $(".section-fc .content .cont").not($(".section-fc .content .cont").eq(i)).stop().fadeOut();
+    }
+
+    $(".section-fc .fc_tit .titWrap").click(function() {
+        var i = $(this).index();
+        sec_fc();
     });
 });
