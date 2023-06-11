@@ -51,22 +51,27 @@ fcTit.forEach(function(item, index) {
 });
 */
 $(function() {    
-    $(".section-fc .fc_tit .titWrap").click(function(){
-        var i = $(this).index();
-        
+    sec_fc();
+    function sec_fc() {
         $(".section-fc .fc_tit .titWrap").eq(i).addClass("on");
         $(".section-fc .fc_tit .titWrap").not($(".section-fc .fc_tit .titWrap").eq(i)).removeClass("on");
         $(".section-fc .content .cont").eq(i).stop().fadeIn();
         $(".section-fc .content .cont").not($(".section-fc .content .cont").eq(i)).stop().fadeOut();
-
+        
         var item = $(".section-fc .fc_tit .titWrap");
         var active_item = $(".section-fc .fc_tit .titWrap").eq(i);
-        item.each(function(inx) {
-            if (inx <= i) {
-                $(this).css({left: inx * 6 + '%' });
+        item.each(function(inx){
+            if(inx <= i) {
+                $(this).css({left: inx * 6 + '%'});
             } else {
+                //console.log(Math.abs(inx-5))
                 $(this).css({left: 100 - Math.abs(inx-5) * 6 + '%'});
             }
         });
+    }
+    
+    $(".section-fc .fc_tit .titWrap").click(function(){
+        var i = $(this).index();
+        sec_fc();
     });
 });
