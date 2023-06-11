@@ -39,7 +39,7 @@ const hdLnb = header.querySelectorAll('.lnb');
 const menuBg = document.querySelector('header .menu_bg');
 
 function slideDown(el) {
-    if (el.scrollHeight.length > 0) {
+    if (el.length > 0) {
         el.style.height = el.scrollHeight + 'px';
     } else {
         let styleHeight = window.getComputedStyle(el).getPropertyValue('height');
@@ -125,6 +125,7 @@ function mobile_remove() {
 }
 mobile_remove();
 
+
 hdMobileBtn.addEventListener('click', function() {
     body.classList.add('on');
     mobileOnly.classList.add('on');
@@ -133,6 +134,7 @@ hdMobileBtn.addEventListener('click', function() {
 sdMobileBtn.addEventListener('click', function() {
     mobile_remove();
 });
+
 
 function getSiblings(el) {
     return Array.from(el.parentNode.children).filter(function(child) {
