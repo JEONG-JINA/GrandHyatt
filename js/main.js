@@ -64,7 +64,6 @@ $(function() {
             if(inx <= i) {
                 $(this).css({left: inx * 6 + '%'});
             } else {
-                //console.log(Math.abs(inx-5))
                 $(this).css({left: 100 - Math.abs(inx-5) * 6 + '%'});
             }
         });
