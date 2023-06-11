@@ -1,4 +1,4 @@
-var win_w = window.outerWidth;
+const win_w = window.outerWidth;
 const win_h = window.innerHeight;
 let i = 0;
 
@@ -6,8 +6,6 @@ let i = 0;
 
 //반응형
 window.addEventListener('resize', function() {
-    var win_w = window.outerWidth;
-
     hd_scroll();
     mobile_remove();
 });
@@ -19,6 +17,7 @@ const header = document.querySelector('header');
 
 function hd_scroll() {
     window.addEventListener('scroll', function(){
+        const win_w = window.outerWidth;
         const scr_top = window.scrollY || document.documentElement.scrollTop;
 
         if (win_w > 1023 && scr_top > 65) {
