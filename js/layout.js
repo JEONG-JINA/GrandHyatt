@@ -50,8 +50,10 @@ function slideDown(el) {
     }
   
     setTimeout(function() {
+        el.style.display = 'block';
         el.style.transition = '';
-    });
+        el.style.height = '';
+    }, 200);
 }
   
 function slideUp(el) {
@@ -62,7 +64,7 @@ function slideUp(el) {
         el.style.display = 'none';
         el.style.transition = '';
         el.style.height = '';
-    });
+    }, 200);
 }
   
 function hdMouseEnter() {
