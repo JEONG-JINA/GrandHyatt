@@ -16,6 +16,7 @@ function hd_scroll() {
     window.addEventListener('scroll', function(){
         const win_w = window.outerWidth;
         const scr_top = window.scrollY || document.documentElement.scrollTop;
+        const header = document.querySelector('header');
 
         if (win_w > 1023 && scr_top > 65) {
             header.classList.add('fixed');
@@ -134,16 +135,20 @@ const hdMobileBtn = header.querySelector('.mo_btn');
 const mobileBtn = mobileMenu.querySelector('.mo_btn');
 
 function mobile_remove() {
-    body.classList.remove('on');
-    mobileMenu.classList.remove('on');
+    const win_w = window.outerWidth;
 
-    mobileGnb.forEach(function(item) {
-        item.classList.remove('on');
-        item.querySelector('.lnb').style.display = 'none';
-    });
+    if (win_w > 1023) {
+        body.classList.remove('on');
+        mobileMenu.classList.remove('on');
+
+        mobileGnb.forEach(function(item) {
+            item.classList.remove('on');
+            item.querySelector('.lnb').style.display = 'none';
+        });
     
-    mobileGnb[0].classList.add('on');
-    mobileGnb[0].querySelector('.lnb').style.display = 'block';
+        mobileGnb[0].classList.add('on');
+        mobileGnb[0].querySelector('.lnb').style.display = 'block';
+    }
 }
 mobile_remove();
 
