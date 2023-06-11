@@ -144,9 +144,9 @@ $(".atr_section .filter li").click(function(){
 function atr_filter(){
     $(".atr_section .content .cont").stop().hide();
     $(".atr_section ."+_name).stop().show();
-    $(".atr_section .filter li span").not($(".atr_section .filter li span").eq(i)).stop().hide();
+    //$(".atr_section .filter li span").not($(".atr_section .filter li span").eq(i)).stop().hide();
     $(".atr_section .filter li").not($(".atr_section .filter li").eq(i)).removeClass("on");
-    $(".atr_section .filter li span").eq(i).stop().show();
+    //$(".atr_section .filter li span").eq(i).stop().show();
     $(".atr_section .filter li").eq(i).addClass("on");
 };
 
