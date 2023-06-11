@@ -32,7 +32,7 @@ atrFilter.forEach(function(item, index) {
         atrContent.forEach(function(atrItem) {
             atrItem.style.display = 'none';
         });
-        document.querySelector('.atr_section .content .' + dataName).forEach(function(atrData) {
+        document.querySelectorAll('.atr_section .content .' + dataName).forEach(function(atrData) {
             atrData.style.display = 'block';
         });
     });

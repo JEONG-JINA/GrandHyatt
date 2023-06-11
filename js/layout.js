@@ -1,4 +1,4 @@
-const win_w = window.outerWidth;
+//const win_w = window.outerWidth;
 const win_h = window.innerHeight;
 let i = 0;
 
@@ -16,6 +16,7 @@ window.addEventListener('resize', function() {
 function hd_scroll() {
     window.addEventListener('scroll', function(){
         const scr_top = window.scrollY || document.documentElement.scrollTop;
+        const win_w = window.outerWidth;
 
         if (win_w > 1023 && scr_top > 65) {
             header.classList.add('fixed');
@@ -117,6 +118,7 @@ const hdMobileBtn = header.querySelector('.mo_btn');
 const mobileBtn = mobileMenu.querySelector('.mo_btn');
 
 function mobile_remove() {
+    const win_w = window.outerWidth;
     if (win_w > 1023) {
         body.classList.remove('on');
         mobileMenu.classList.remove('on');
