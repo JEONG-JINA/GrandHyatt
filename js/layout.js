@@ -39,13 +39,15 @@ const hdLnb = header.querySelectorAll('.lnb');
 const menuBg = document.querySelector('header .menu_bg');
 
 function slideDown(el) {
-    if (el.length > 0) {
+    el.style.transition = 'height 0.3s';
+    el.style.display = 'block';
+
+    if (el.scrollHeight > 0) {
         el.style.height = el.scrollHeight + 'px';
     } else {
         let styleHeight = window.getComputedStyle(el).getPropertyValue('height');
         el.style.height = styleHeight;
     }
-    el.style.transition = 'height 0.3s';
   
     setTimeout(function() {
         el.style.transition = '';

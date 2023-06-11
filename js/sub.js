@@ -29,9 +29,12 @@ atrFilter.forEach(function(item, index) {
         const dataName = attr(item, 'data-name');
         var i = index;
 
-        atrContent.style.display = 'none';
-        atrContent.classList.contains(dataName);
-
         item.classList.toggle('on', index === i);
+
+        if (atrContent.classList.contains(dataName)) {
+            atrContent.style.display = 'block';
+        } else {
+            atrContent.style.display = 'none';
+        }
     });
 });
