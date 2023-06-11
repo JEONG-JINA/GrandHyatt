@@ -8,10 +8,6 @@ function offsetTop(el) {
     return rect.top + scr_top; //이 함수는 rect.top+scr_top(offset().top) 값을 반환
 }
 
-function attr(el, attributeName) {
-    return el.getAttribute(attributeName);
-}
-
 window.addEventListener('scroll', function() {
     const scr_top = window.scrollY || document.documentElement.scrollTop;
 
@@ -26,15 +22,16 @@ window.addEventListener('scroll', function() {
 
 atrFilter.forEach(function(item, index) {
     item.addEventListener('click', function() {
-        const dataName = attr(item, 'data-name');
+        const dataName = item.getAttribute('data-name');
         var i = index;
 
-        item.classList.toggle('on', index === i);
+        atrFilter.forEach(function(filterItem, filterIndex) {
+            filterItem.classList.toggle('on', filterIndex === i);
+        });
 
-        if (atrContent.classList.contains(dataName)) {
-            atrContent.style.display = 'block';
-        } else {
-            atrContent.style.display = 'none';
-        }
+        atrContent.forEach(function(atrItem) {
+            atrItem.style.display = 'none';
+        });
+        document.querySelector('.atr_section .content .' + dataName).style.display = 'block';
     });
 });

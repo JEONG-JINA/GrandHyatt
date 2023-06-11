@@ -5,7 +5,7 @@ let i = 0;
 
 
 //반응형
-window.addEventListener('resize', function(){
+window.addEventListener('resize', function() {
     hd_scroll();
     mobile_remove();
 });
@@ -51,7 +51,7 @@ function slideDown(el) {
   
     setTimeout(function() {
         el.style.transition = '';
-    }, 300);
+    });
 }
   
 function slideUp(el) {
@@ -62,7 +62,7 @@ function slideUp(el) {
         el.style.display = 'none';
         el.style.transition = '';
         el.style.height = '';
-    }, 300);
+    });
 }
   
 function hdMouseEnter() {
@@ -100,29 +100,32 @@ function slideToggle(el) {
     }
 }
 
+hdLang.addEventListener('click', function() {
+    slideToggle(hdLangList);
+});
+
 
 
 //모바일 메뉴
 const body = document.querySelector('body');
-const mobileOnly = document.querySelector('.mobile-only');
-const side = document.querySelector('.side');
-const sdGnb = side.querySelectorAll('.gnb > ul > li');
-const sdLnb = side.querySelectorAll('.lnb');
+const mobileMenu = document.querySelector('.mobile-only');
+const mobileGnb = mobileMenu.querySelectorAll('.gnb > ul > li');
+//const mobileLnb = mobileMenu.querySelectorAll('.lnb');
 const hdMobileBtn = header.querySelector('.mo_btn');
-const sdMobileBtn = side.querySelector('.mo_btn');
+const mobileBtn = mobileMenu.querySelector('.mo_btn');
 
 function mobile_remove() {
     if (win_w > 1023) {
         body.classList.remove('on');
-        mobileOnly.classList.remove('on');
+        mobileMenu.classList.remove('on');
 
-        sdGnb.forEach(function(item) {
+        mobileGnb.forEach(function(item) {
             item.classList.remove('on');
             item.querySelector('.lnb').style.display = 'none';
         });
     
-        sdGnb[0].classList.add('on');
-        sdGnb[0].querySelector('.lnb').style.display = 'block';
+        mobileGnb[0].classList.add('on');
+        mobileGnb[0].querySelector('.lnb').style.display = 'block';
     }
 }
 mobile_remove();
@@ -130,10 +133,10 @@ mobile_remove();
 
 hdMobileBtn.addEventListener('click', function() {
     body.classList.add('on');
-    mobileOnly.classList.add('on');
+    mobileMenu.classList.add('on');
 });
 
-sdMobileBtn.addEventListener('click', function() {
+mobileBtn.addEventListener('click', function() {
     mobile_remove();
 });
 
@@ -144,7 +147,7 @@ function getSiblings(el) {
     });
 }
 
-sdGnb.forEach(function(item) {
+mobileGnb.forEach(function(item) {
     item.addEventListener('click', function() {
         const siblings = getSiblings(item);
         siblings.forEach(function(sibling) {
