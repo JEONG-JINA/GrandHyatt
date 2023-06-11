@@ -26,30 +26,6 @@ tabBtn.forEach(function(item, index) {
 
 
 //부대시설
-/*
-const fcTit = document.querySelectorAll('.section-fc .fc_tit .titWrap');
-const fcContent = document.querySelectorAll('.section-fc .content .cont');
-  
-fcTit.forEach(function(item, index) {
-    item.addEventListener('click', function() {
-        var i = index;
-        
-        fcTit.forEach(function(fcTitItem, fcTitIndex) {
-            fcTitItem.classList.toggle('on', fcTitIndex === i);
-    
-            if (fcTitIndex <= i) {
-                fcTitItem.style.left = i * 6 + '%';
-            } else {
-                fcTitItem.style.left = 100 - Math.abs(i - 5) * 6 + '%';
-            }
-        });
-      
-        fcContent.forEach(function(fcConItem, fcConIndex) {
-            fcConItem.classList.toggle('on', fcConIndex === i);
-        });
-    });
-});
-*/
 $(function() {
     $(".section-fc .fc_tit .titWrap").click(function() {
         var i = $(this).index();
