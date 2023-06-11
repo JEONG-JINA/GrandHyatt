@@ -33,6 +33,24 @@ function hd_scroll() {
 hd_scroll();
 
 
+$(function() {
+    $("header .gnb > ul > li").on("mouseenter focusin", function(){
+        $("header .lnb").stop().slideDown();
+        $("header .menu_bg").stop().slideDown();
+        $("header").addClass("on");
+    });
+    
+    $("header").on("mouseleave focusout", function(){
+        $("header .lnb").stop().slideUp();
+        $("header .menu_bg").stop().slideUp();
+        $("header").removeClass("on");
+    });
+    
+    $("header .top ._menu .lang > span").click(function(){
+        $(this).siblings().stop().slideToggle();
+    });
+});
+/*
 const header = document.querySelector('header');
 const hdGnb = header.querySelectorAll('.gnb > ul > li');
 const hdLnb = header.querySelectorAll('.lnb');
@@ -105,32 +123,27 @@ function slideToggle(el) {
 hdLang.addEventListener('click', function() {
     slideToggle(hdLangList);
 });
-
+*/
 
 
 //모바일 메뉴
 const body = document.querySelector('body');
 const mobileMenu = document.querySelector('.mobile-only');
 const mobileGnb = mobileMenu.querySelectorAll('.gnb > ul > li');
-//const mobileLnb = mobileMenu.querySelectorAll('.lnb');
 const hdMobileBtn = header.querySelector('.mo_btn');
 const mobileBtn = mobileMenu.querySelector('.mo_btn');
 
 function mobile_remove() {
-    const win_w = window.outerWidth;
-    
-    if (win_w > 1023) {
-        body.classList.remove('on');
-        mobileMenu.classList.remove('on');
+    body.classList.remove('on');
+    mobileMenu.classList.remove('on');
 
-        mobileGnb.forEach(function(item) {
-            item.classList.remove('on');
-            item.querySelector('.lnb').style.display = 'none';
-        });
+    mobileGnb.forEach(function(item) {
+        item.classList.remove('on');
+        item.querySelector('.lnb').style.display = 'none';
+    });
     
-        mobileGnb[0].classList.add('on');
-        mobileGnb[0].querySelector('.lnb').style.display = 'block';
-    }
+    mobileGnb[0].classList.add('on');
+    mobileGnb[0].querySelector('.lnb').style.display = 'block';
 }
 mobile_remove();
 
@@ -142,7 +155,6 @@ hdMobileBtn.addEventListener('click', function() {
 
 mobileBtn.addEventListener('click', function() {
     mobile_remove();
-    console.log('클릭');
 });
 
 
