@@ -1,4 +1,4 @@
-const win_w = window.outerWidth;
+var win_w = window.outerWidth;
 const win_h = window.innerHeight;
 let i = 0;
 
@@ -6,6 +6,8 @@ let i = 0;
 
 //반응형
 window.addEventListener('resize', function() {
+    var win_w = window.outerWidth;
+
     hd_scroll();
     mobile_remove();
 });
