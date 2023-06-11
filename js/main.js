@@ -58,13 +58,12 @@ $(function() {
         $(".section-fc .content .cont").eq(i).stop().fadeIn();
         $(".section-fc .content .cont").not($(".section-fc .content .cont").eq(i)).stop().fadeOut();
         
-        var item = $(".section-fc .fc_tit .titWrap");
-        var active_item = $(".section-fc .fc_tit .titWrap").eq(i);
-        item.each(function(inx){
-            if(inx <= i) {
-                $(this).css({left: inx * 6 + '%'});
+        var fcTitItem = $(".section-fc .fc_tit .titWrap");
+        fcTitItem.each(function(clickedItem) {
+            if(clickedItem <= i) {
+                $(this).css({left: clickedItem * 6 + '%'});
             } else {
-                $(this).css({left: 100 - Math.abs(inx-5) * 6 + '%'});
+                $(this).css({left: 100 - Math.abs(clickedItem - 5) * 6 + '%'});
             }
         });
     }
