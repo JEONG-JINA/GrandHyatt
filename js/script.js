@@ -6,8 +6,15 @@ var i = 0;
 //반응형
 $(window).resize(function(){
     hd_scr();
-    mobile_remove();
+    
+    if (win_w > 1023) {
+        mobile_remove();
+    };
 });
+
+if (win_w > 1023) {
+    mobile_remove();
+};
 
 
 //헤더
@@ -66,18 +73,13 @@ $(".side .gnb > ul > li").click(function(){
 });
 
 function mobile_remove() {
-    var win_w = $(window).outerWidth();
-
-    if(win_w > 1023) {
-        $("body").removeClass("on");
-        $(".mobile-only").removeClass("on");
-        $(".side .gnb > ul  > li").removeClass("on");
-        $(".side .gnb > ul  > li").find(".lnb").hide();
-        $(".side .gnb > ul  > li:first-child").addClass("on");
-        $(".side .gnb > ul  > li:first-child").find(".lnb").show();
-    }
+    $("body").removeClass("on");
+    $(".mobile-only").removeClass("on");
+    $(".side .gnb > ul  > li").removeClass("on");
+    $(".side .gnb > ul  > li").find(".lnb").hide();
+    $(".side .gnb > ul  > li:first-child").addClass("on");
+    $(".side .gnb > ul  > li:first-child").find(".lnb").show();
 }
-mobile_remove();
 
 
 //메인비주얼

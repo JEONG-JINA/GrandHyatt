@@ -1,3 +1,4 @@
+const win_w = window.outerWidth;
 const win_h = window.innerHeight;
 let i = 0;
 
@@ -16,7 +17,6 @@ const header = document.querySelector('header');
 
 function hd_scroll() {
     window.addEventListener('scroll', function(){
-        const win_w = window.outerWidth;
         const scr_top = window.scrollY || document.documentElement.scrollTop;
 
         if (win_w > 1023 && scr_top > 65) {
@@ -136,22 +136,21 @@ const hdMobileBtn = header.querySelector('.mo_btn');
 const mobileBtn = mobileMenu.querySelector('.mo_btn');
 
 function mobile_remove() {
-    const win_w = window.outerWidth;
+    body.classList.remove('on');
+    mobileMenu.classList.remove('on');
 
-    if (win_w > 1023) {
-        body.classList.remove('on');
-        mobileMenu.classList.remove('on');
-
-        mobileGnb.forEach(function(item) {
-            item.classList.remove('on');
-            item.querySelector('.lnb').style.display = 'none';
-        });
+    mobileGnb.forEach(function(item) {
+        item.classList.remove('on');
+        item.querySelector('.lnb').style.display = 'none';
+    });
     
-        mobileGnb[0].classList.add('on');
-        mobileGnb[0].querySelector('.lnb').style.display = 'block';
-    }
+    mobileGnb[0].classList.add('on');
+    mobileGnb[0].querySelector('.lnb').style.display = 'block';
 }
-mobile_remove();
+
+if (win_w > 1023) {
+    mobile_remove();
+}
 
 
 hdMobileBtn.addEventListener('click', function() {
