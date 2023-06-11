@@ -39,13 +39,13 @@ const hdLnb = header.querySelectorAll('.lnb');
 const menuBg = document.querySelector('header .menu_bg');
 
 function slideDown(el) {
-    //el.style.display = 'block';
-    //el.style.height = '0px';
+    el.style.display = 'block';
+    el.style.height = '0px';
   
-    let height = el.scrollHeight;
+    let slideHeight = el.scrollHeight;
   
     el.style.transition = 'height 0.3s';
-    el.style.height = height + 'px';
+    el.style.height = slideHeight + 'px';
   
     setTimeout(function() {
         el.style.transition = '';
@@ -53,8 +53,6 @@ function slideDown(el) {
 }
   
 function slideUp(el) {
-    let height = el.scrollHeight;
-  
     el.style.transition = 'height 0.3s';
     el.style.height = '0px';
   
