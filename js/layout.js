@@ -39,7 +39,7 @@ const hdLnb = header.querySelectorAll('.lnb');
 const menuBg = document.querySelector('header .menu_bg');
 
 function slideDown(el) {
-    if (el.scrollHeight > 0) {
+    if (el.scrollHeight.length > 0) {
         el.style.height = el.scrollHeight + 'px';
     } else {
         let styleHeight = window.getComputedStyle(el).getPropertyValue('height');

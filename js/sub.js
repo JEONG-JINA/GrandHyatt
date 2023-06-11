@@ -1,7 +1,6 @@
 //주변 즐길거리
 const atrContent = document.querySelectorAll('.atr_section .content .cont');
 const atrFilter = document.querySelectorAll('.atr_section .filter li');
-const atrFilterSpan = atrFilter.querySelectorAll('span');
 
 function offsetTop(el) {
     const rect = el.getBoundingClientRect(); //요소의 위치 정보
