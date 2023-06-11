@@ -996,6 +996,14 @@ header .bottom .gnb > ul > li > a {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    opacity: 0;
+    z-index: 0;
+    transition: opacity 0.3s;
+}
+
+.section-fc .content .cont.on {
+    z-index: 1;
+    opacity: 1;
 }
 
 .section-fc .content .cont1 {
@@ -1023,7 +1031,6 @@ header .bottom .gnb > ul > li > a {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 10;
     color: rgba(255, 255, 255, 0.9);
 }
 

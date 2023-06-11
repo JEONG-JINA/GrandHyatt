@@ -41,17 +41,13 @@ function sec_fc() {
     });
   
     fcContent.forEach(function(item, index) {
-        if (index === i) {
-            item.style.display = 'block';
-        } else {
-            item.style.display = 'none';
-        }
+        item.classList.toggle('on', index === i);
     });
 }
   
 fcTit.forEach(function(item, index) {
     item.addEventListener('click', function() {
-        var i = index;
+        i = index;
         sec_fc();
     });
 });
