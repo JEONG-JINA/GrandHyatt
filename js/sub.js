@@ -1,5 +1,5 @@
 //주변 즐길거리
-const atrContent = docoment.querySelectorAll('.atr_section .content .cont');
+const atrContent = document.querySelectorAll('.atr_section .content .cont');
 const atrFilter = document.querySelectorAll('.atr_section .filter li');
 const atrFilterSpan = atrFilter.querySelectorAll('span');
 

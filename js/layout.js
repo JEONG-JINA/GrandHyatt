@@ -39,13 +39,13 @@ const hdLnb = header.querySelectorAll('.lnb');
 const menuBg = document.querySelector('header .menu_bg');
 
 function slideDown(el) {
-    el.style.display = 'block';
-    el.style.height = '0px';
-  
-    let slideHeight = el.scrollHeight;
-  
+    if (el.scrollHeight > 0) {
+        el.style.height = el.scrollHeight + 'px';
+    } else {
+        let styleHeight = window.getComputedStyle(el).getPropertyValue('height');
+        el.style.height = styleHeight;
+    }
     el.style.transition = 'height 0.3s';
-    el.style.height = slideHeight + 'px';
   
     setTimeout(function() {
         el.style.transition = '';
@@ -127,7 +127,7 @@ mobile_remove();
 
 hdMobileBtn.addEventListener('click', function() {
     body.classList.add('on');
-    mobileOnly.classList('on');
+    mobileOnly.classList.add('on');
 });
 
 sdMobileBtn.addEventListener('click', function() {
