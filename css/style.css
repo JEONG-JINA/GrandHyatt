@@ -81,7 +81,6 @@ header .top ._menu .lang > span::after {
 
 header .top ._menu .lang > ul {
     width: 100%;
-    height: 0;
     position: absolute;
     top: 50px;
     background-color: #000;
@@ -89,7 +88,7 @@ header .top ._menu .lang > ul {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /*display: none;*/
+    display: none;
 }
 
 header .top ._menu .lang > ul > li > a {
@@ -151,13 +150,12 @@ header .bottom .gnb > ul > li > a {
 
 header .bottom .lnb {
     width: calc(100% * 2);
-    height: 0;
     position: absolute;
     top: 40px;
     left: 50%;
     transform: translateX(-50%);
     padding: 35px 0;
-    /*display: none;*/
+    display: none;
 }
 
 header .bottom .lnb > li {

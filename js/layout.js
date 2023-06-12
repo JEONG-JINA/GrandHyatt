@@ -69,7 +69,7 @@ function componentsJs() {
     const menuBg = document.querySelector('header .menu_bg');
 
     function slideDown(el) {
-        //el.style.display = 'block';
+        el.style.display = 'block';
         el.style.transition = 'height 0.3s';
 
         if (el.scrollHeight > 0) {
@@ -87,7 +87,7 @@ function componentsJs() {
     function slideUp(el) {
         el.style.transition = 'height 0.3s';
         el.style.height = '0px';
-        //el.style.display = 'none';
+        el.style.display = 'none';
   
         setTimeout(function() {
             el.style.height = '';
@@ -122,7 +122,7 @@ function componentsJs() {
     const hdLangList = header.querySelector('.lang > ul');
 
     function slideToggle(el) {
-        if (window.getComputedStyle(el).height === '0px') {
+        if (window.getComputedStyle(el).scrollHeight === '0px') {
             slideDown(el);
         } else {
             slideUp(el);
