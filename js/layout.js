@@ -10,6 +10,10 @@ window.addEventListener('resize', function() {
     mobile_remove();
 });
 
+if (win_w > 1023) {
+    mobile_remove();
+}
+
 
 
 //헤더
@@ -129,6 +133,7 @@ hdLang.addEventListener('click', function() {
 */
 
 
+
 //모바일 메뉴
 const body = document.querySelector('body');
 const mobileMenu = document.querySelector('.mobile-only');
@@ -147,10 +152,6 @@ function mobile_remove() {
     
     mobileGnb[0].classList.add('on');
     mobileGnb[0].querySelector('.lnb').style.display = 'block';
-}
-
-if (win_w > 1023) {
-    mobile_remove();
 }
 
 

@@ -5,6 +5,19 @@ mainTxt.classList.add('on');
 
 
 
+//예약
+const checkIn = flatpickr(document.querySelector('.start_date'), {
+	'monthSelectorType' : 'static',
+	"locale": "ko" 
+});
+
+const checkOut = flatpickr(document.querySelector('.end_date'), {
+	'monthSelectorType' : 'static',
+	"locale": "ko" 
+});
+
+
+
 //다이닝
 const tabBtn = document.querySelectorAll('.section-dining .tab-btn li');
 const tabContent = document.querySelectorAll('.section-dining .tab-content li');
