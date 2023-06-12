@@ -5,14 +5,6 @@ let i = 0;
 
 
 function componentsJs() {
-    //반응형
-    window.addEventListener('resize', function() {
-        hd_scroll();
-        mobile_remove();
-    });
-
-
-
     //헤더
     const header = document.querySelector('header');
 
@@ -183,6 +175,14 @@ function componentsJs() {
             item.classList.add('on');
             item.querySelector('.lnb').style.display = 'block';
         });
+    });
+
+
+
+    //반응형
+    window.addEventListener('resize', function() {
+        hd_scroll();
+        mobile_remove();
     });
 }
 
