@@ -741,13 +741,6 @@ header .bottom .gnb > ul > li > a {
 
 
 /** 객실 **/
-.section-room {
-    background-image: url('/GrandHyatt/img/sec3_bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
 .section-room .inner {
     width: calc(((100% - 85%) / 2) + 85%);
     max-width: calc(((100% - 1280px) / 2) + 1280px);
