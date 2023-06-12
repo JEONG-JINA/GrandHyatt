@@ -18,8 +18,12 @@ component.forEach(function(el) {
     });
 });
 
-
-
+const header = document.querySelector('header');
+const body = document.querySelector('body');
+    const mobileMenu = document.querySelector('.mobile-only');
+    const mobileGnb = mobileMenu.querySelectorAll('.gnb > ul > li');
+    const hdMobileBtn = header.querySelector('.mo_btn');
+    const mobileBtn = mobileMenu.querySelector('.mo_btn');
 function componentsJs() {
     //헤더
     const header = document.querySelector('header');
@@ -137,11 +141,6 @@ function componentsJs() {
 
 
     //모바일 메뉴
-    const body = document.querySelector('body');
-    const mobileMenu = document.querySelector('.mobile-only');
-    const mobileGnb = mobileMenu.querySelectorAll('.gnb > ul > li');
-    const hdMobileBtn = header.querySelector('.mo_btn');
-    const mobileBtn = mobileMenu.querySelector('.mo_btn');
 
     function mobile_remove() {
         body.classList.remove('on');
@@ -198,4 +197,3 @@ function componentsJs() {
         mobile_remove();
     });
 }
-componentsJs();
