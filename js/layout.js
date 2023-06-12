@@ -47,7 +47,7 @@ function componentsJs() {
 
     $(function() {
         $("header .gnb > ul > li").on("mouseenter focusin", function() {
-            $("header .lnb").stop().slideDown(300);
+            $("header .lnb").stop().slideDown();
             $("header .menu_bg").stop().slideDown();
             $("header").addClass("on");
         });
@@ -198,3 +198,4 @@ function componentsJs() {
         mobile_remove();
     });
 }
+componentsJs();
