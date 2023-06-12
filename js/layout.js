@@ -4,6 +4,22 @@ let i = 0;
 
 
 
+//공통 컴포넌트
+const component = document.querySelectorAll('.component');
+
+component.forEach(function(el) {
+    const include = el.getAttribute('data-include');
+
+    fetch(include)
+    .then(res => res.text())
+    .then(data => {
+        el.innerHTML = data;
+        componentsJs();
+    });
+});
+
+
+
 function componentsJs() {
     //헤더
     const header = document.querySelector('header');
@@ -185,19 +201,3 @@ function componentsJs() {
         mobile_remove();
     });
 }
-
-
-
-//공통 컴포넌트
-const component = document.querySelectorAll('.component');
-
-component.forEach(function(el) {
-    const include = el.getAttribute('data-include');
-
-    fetch(include)
-    .then(res => res.text())
-    .then(data => {
-        el.innerHTML = data;
-        componentsJs();
-    });
-});
