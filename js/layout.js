@@ -4,21 +4,6 @@ let i = 0;
 
 
 
-//공통 컴포넌트
-const component = document.querySelectorAll('.component');
-
-component.forEach(function(el) {
-    const include = el.getAttribute('data-include');
-
-    fetch(include)
-    .then(res => res.text())
-    .then(data => {
-        el.innerHTML = data;
-        componentsJs();
-    });
-});
-
-
 function componentsJs() {
     //반응형
     window.addEventListener('resize', function() {
@@ -200,3 +185,19 @@ function componentsJs() {
         });
     });
 }
+
+
+
+//공통 컴포넌트
+const component = document.querySelectorAll('.component');
+
+component.forEach(function(el) {
+    const include = el.getAttribute('data-include');
+
+    fetch(include)
+    .then(res => res.text())
+    .then(data => {
+        el.innerHTML = data;
+        componentsJs();
+    });
+});
