@@ -257,7 +257,7 @@ header .top ._menu > li > span,
 header .top ._menu .lang > span::after,
 header .top ._menu .lang > ul > li,
 header .bottom,
-header .bottom .gnb > ul > li > a {
+header .bottom .menu_bg {
     transition: 0.3s;
 }
 
