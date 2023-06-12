@@ -81,8 +81,8 @@ function componentsJs() {
         }
   
         setTimeout(function() {
-            el.style.transition = '';
             el.style.height = '';
+            el.style.display = 'block';
         }, 200);
     }
   
@@ -92,8 +92,8 @@ function componentsJs() {
         el.style.display = 'none';
   
         setTimeout(function() {
-            el.style.transition = '';
             el.style.height = '';
+            el.style.display = 'none';
         }, 200);
     }
   
