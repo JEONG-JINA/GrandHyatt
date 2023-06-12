@@ -45,7 +45,7 @@ function componentsJs() {
     hd_scroll();
 
 
-    $(function() {
+    /*$(function() {
         $("header .gnb > ul > li").on("mouseenter focusin", function(){
             $("header .lnb").stop().slideDown();
             $("header .menu_bg").stop().slideDown();
@@ -61,16 +61,17 @@ function componentsJs() {
         $("header .top ._menu .lang > span").click(function(){
             $(this).siblings().stop().slideToggle();
         });
-    });
-    /*
-    const header = document.querySelector('header');
+    });*/
+    
+
     const hdGnb = header.querySelectorAll('.gnb > ul > li');
     const hdLnb = header.querySelectorAll('.lnb');
     const menuBg = document.querySelector('header .menu_bg');
 
     function slideDown(el) {
-        el.style.transition = 'height 0.3s';
         el.style.display = 'block';
+        el.style.transition = 'height 0.3s';
+        el.style.height= '0px';
 
         if (el.scrollHeight > 0) {
             el.style.height = el.scrollHeight + 'px';
@@ -80,7 +81,6 @@ function componentsJs() {
         }
   
         setTimeout(function() {
-            el.style.display = 'block';
             el.style.transition = '';
             el.style.height = '';
         }, 200);
@@ -89,9 +89,9 @@ function componentsJs() {
     function slideUp(el) {
         el.style.transition = 'height 0.3s';
         el.style.height = '0px';
+        el.style.display = 'none';
   
         setTimeout(function() {
-            el.style.display = 'none';
             el.style.transition = '';
             el.style.height = '';
         }, 200);
@@ -135,7 +135,6 @@ function componentsJs() {
     hdLang.addEventListener('click', function() {
         slideToggle(hdLangList);
     });
-    */
 
 
 
