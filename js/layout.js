@@ -10,10 +10,6 @@ window.addEventListener('resize', function() {
     mobile_remove();
 });
 
-if (win_w > 1023) {
-    mobile_remove();
-}
-
 
 
 //헤더
@@ -152,6 +148,10 @@ function mobile_remove() {
     
     mobileGnb[0].classList.add('on');
     mobileGnb[0].querySelector('.lnb').style.display = 'block';
+}
+
+if (win_w > 1023) {
+    mobile_remove();
 }
 
 
