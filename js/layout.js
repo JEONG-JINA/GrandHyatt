@@ -26,7 +26,6 @@ const body = document.querySelector('body');
     const mobileBtn = mobileMenu.querySelector('.mo_btn');
 function componentsJs() {
     //헤더
-    const header = document.querySelector('header');
 
     function hd_scroll() {
         window.addEventListener('scroll', function(){
