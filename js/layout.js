@@ -47,7 +47,7 @@ function componentsJs() {
 
     $(function() {
         $("header .gnb > ul > li").on("mouseenter focusin", function() {
-            $("header .lnb").stop().show();
+            $("header .lnb").stop().show(600);
             $("header .menu_bg").stop().slideDown();
             $("header").addClass("on");
         });
