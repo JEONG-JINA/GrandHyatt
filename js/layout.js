@@ -69,9 +69,8 @@ function componentsJs() {
     const menuBg = document.querySelector('header .menu_bg');
 
     function slideDown(el) {
-        el.style.display = 'block';
+        //el.style.display = 'block';
         el.style.transition = 'height 0.3s';
-        el.style.height= '0px';
 
         if (el.scrollHeight > 0) {
             el.style.height = el.scrollHeight + 'px';
@@ -82,18 +81,16 @@ function componentsJs() {
   
         setTimeout(function() {
             el.style.height = '';
-            el.style.display = 'block';
         }, 200);
     }
   
     function slideUp(el) {
         el.style.transition = 'height 0.3s';
         el.style.height = '0px';
-        el.style.display = 'none';
+        //el.style.display = 'none';
   
         setTimeout(function() {
             el.style.height = '';
-            el.style.display = 'none';
         }, 200);
     }
   
@@ -125,7 +122,7 @@ function componentsJs() {
     const hdLangList = header.querySelector('.lang > ul');
 
     function slideToggle(el) {
-        if (window.getComputedStyle(el).display === 'none') {
+        if (window.getComputedStyle(el).height === '0px') {
             slideDown(el);
         } else {
             slideUp(el);
