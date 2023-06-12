@@ -46,19 +46,19 @@ function componentsJs() {
 
 
     $(function() {
-        $("header .gnb > ul > li").on("mouseenter focusin", function(){
-            $("header .lnb").stop().slideDown();
+        $("header .gnb > ul > li").on("mouseenter focusin", function() {
+            $("header .lnb").stop().slideDown(300);
             $("header .menu_bg").stop().slideDown();
             $("header").addClass("on");
         });
     
-        $("header").on("mouseleave focusout", function(){
+        $("header").on("mouseleave focusout", function() {
             $("header .lnb").stop().slideUp();
             $("header .menu_bg").stop().slideUp();
             $("header").removeClass("on");
         });
     
-        $("header .top ._menu .lang > span").on("click, focusin", function(){
+        $("header .top ._menu .lang > span").click(function() {
             $(this).siblings().stop().slideToggle();
         });
     });
