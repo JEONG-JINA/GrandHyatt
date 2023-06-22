@@ -304,10 +304,8 @@
 }
 
 .inq_section textarea {
-    outline: none;
+    width: 100%;
     border: 1px solid rgba(0, 0, 0, 0.3);
-    padding: 5px;
-    box-sizing: border-box;
 }
 
 .inq_section input[type='submit'] {
@@ -415,10 +413,6 @@
     .inq_section input[type='tel'],
     .inq_section input[type='email'] {
         width: 60%;
-    }
-
-    .inq_section textarea {
-        width: 100%;
     }
 }
 
