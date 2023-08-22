@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+    background-color: #fbfbfb;
+    font-family: 'Bitter', 'Noto Sans KR', serif, sans-serif;
+}
+
+.clear::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.s-pc,
+.mo {
+    display: none;
+}
+
+select.whiteArrow {
+    background-color:transparent;
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+}
+
+select.whiteArrow::-ms-expand {
+    display: none;
+}
+
+.section-offers .content .cont .offers_txt .date,
+.section-dining .tab-content .dining_txt .more,
+.btn > span {
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+}
+
+
+/** section **/
+.inner {
+    width: 85%;
+    max-width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 90px 0;
+}
+
+section h2 {
+    font-size: 47px;
+    font-weight: 400;
+}
+
+section h3 {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+section p {
+    line-height: 1.6;
+    color: #727272;
+    letter-spacing: -0.6px;
+}
+
+.sec_title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.sec_title::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 1px;
+    background-color: #902e2e;
+    margin: 30px auto 0;
+}
+
+.sec_title h2 {
+    color: #192E40;
+}
+
+.sec_title p {
+    font-size: 17px;
+    margin-top: 25px;
+    color: #444;
+}
+
+
+/** button style **/
+.btn {
+    width: 150px;
+    height: 46px;
+    border: 1px solid #192E40;
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 100%;
+    background-color: #192E40;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.4s;
+}
+
+.btn > span {
+    color: #192E40;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.4s;
+}
+
+
+/** slick **/
+.slick-dotted.slick-slider {
+    margin-bottom: 0 !important;
+}
+
+.slick-custom-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+}
+
+.slick-custom-dots li {
+    margin: 0 6px;
+}
+
+.slick-custom-dots button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    text-indent: -9999px;
+    background-color: #d5d5d5;
+    transition: 0.3s;
+}
+
+.slick-custom-dots li.slick-active button {
+    background-color: #192E40;
+    width: 25px;
+    border-radius: 35px;
+}
+
+
+/** hover **/
+@media screen and (min-width: 1024px) {
+    .btn:hover::before {
+        width: 100%;
+    }
+    
+    .btn:hover > span {
+        color: #fff;
+    }
+}
+
+
+@media screen and (max-width: 1400px) {
+    .inner {
+        max-width: 1000px;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .s-pc {
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 1023px) {
+    body.on {
+        overflow: hidden;
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+
+    section h2 {
+        font-size: 41px;
+    }
+
+    .sec_title p {
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (max-width: 780px) {
+    .section {
+        padding: 60px 0;
+    }
+
+    .sec_title {
+        margin-bottom: 40px;
+    }
+}
+
+
+@media screen and (max-width: 530px) {
+    .mo {
+        display: block;
+    }
+    
+    .section {
+        padding: 40px 0;
+    }
+    
+    section h2 {
+        font-size: 32px;
+    }
+    
+    section h3 {
+        font-size: 18px;
+    }
+    
+    section p {
+        font-size: 14px;
+    }
+
+    .sec_title::after {
+        margin: 20px auto;
+    }
+    
+    .sec_title p {
+        margin-top: 16px;
+        font-size: 14px;
+    }
+
+    .btn {
+        width: 125px;
+        height: 40px;
+        margin-top: 30px;
+    }
+    
+    .btn > span {
+        font-size: 13px;
+    }
+
+    .slick-custom-dots {
+        margin-top: 30px;
+    }
+}

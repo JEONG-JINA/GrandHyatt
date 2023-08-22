@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0, user-scalable=yes">
+    <title>문의하기 ｜ GRAND HYATT SEOUL</title>
+    <link href="/GrandHyatt/img/favicon.ico" rel="shortcut icon">
+    <link href="/GrandHyatt/css/reset.css" rel="stylesheet">
+    <link href="/GrandHyatt/css/common.css" rel="stylesheet">
+    <link href="/GrandHyatt/css/style.css" rel="stylesheet">
+    <link href="/GrandHyatt/css/sub_style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- slick -->
+    <link href="/GrandHyatt/plugin/slick/slick-theme.css" rel="stylesheet">
+    <link href="/GrandHyatt/plugin/slick/slick.css" rel="stylesheet">
+    <script src="/GrandHyatt/plugin/slick/slick.min.js"></script>
+    <!-- flatpickr -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/ko.js"></script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/56dd584cb7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- 헤더 -->
+    <header data-include="/GrandHyatt/components/header.html" class="component"></header>
+    <!-- 모바일 메뉴 -->
+    <div data-include="/GrandHyatt/components/mobileMenu.html" class="mobile-only component"></div>
+    <main id="contents">
+        <!-- 서브탑 -->
+        <div class="sub_top">
+            <div class="image" style="background-image:url('/GrandHyatt/img/wedding_bg.jpg');">
+                <h1>INQUIRIES</h1>
+            </div>
+            <div class="_sub">
+                <div class="inner">
+                    <span><b>SERVICE</b>   ｜   이용문의</span>
+                </div>
+            </div>
+        </div>
+        <!-- 서브섹션 -->
+        <section class="sub_section inq_section">
+            <div class="inner">
+                <div class="sec_title">
+                    <h2>이용문의</h2>
+                    <p>그랜드 하얏트 서울의 문의사항을 남겨주세요.</p>
+                </div>
+                <div class="content">
+                    <span class="required">* 표시는 필수 입력 사항입니다.</span>
+                    <form>
+                        <table>
+                            <tr id="category">
+                                <th>문의유형</th>
+                                <td>
+                                    <input type="radio" name="category" id="use" value="use">
+                                    <label for="use">예약/시설 이용</label>
+                                    <br class="mo">
+                                    <input type="radio" name="category" id="rewards" value="rewards">
+                                    <label for="rewards">하얏트 리워즈</label>
+                                    <br class="mo">
+                                    <input type="radio" name="category" id="inconv" value="inconv">
+                                    <label for="inconv">불편사항</label>
+                                </td>
+                            </tr>
+                            <tr id="name">
+                                <th>성명</th>
+                                <td>
+                                    <input type="text" name="name" required>
+                                </td>
+                            </tr>
+                            <tr id="phone">
+                                <th>전화번호</th>
+                                <td>
+                                    <input type="tel" name="phone" required>
+                                </td>
+                            </tr>
+                            <tr id="mail">
+                                <th>이메일</th>
+                                <td>
+                                    <input type="email" name="mail">
+                                </td>
+                            </tr>
+                            <tr id="content">
+                                <th>내용</th>
+                                <td>
+                                    <textarea cols="50" rows="10" required></textarea>
+                                </td>
+                            </tr>
+                        </table>
+                        <input type="submit">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- 푸터 -->
+    <footer data-include="/GrandHyatt/components/footer.html" class="component"></footer>
+    <!-- 스크립트 -->
+    <script src="/GrandHyatt/js/layout.js"></script>
+</body>
+</html>
